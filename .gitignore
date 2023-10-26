@@ -1,0 +1,13 @@
+# Logs
+logs
+*.log
+dist/*
+dist
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+node_modules
+.DS_Store
+docs/.vitepress/cache/

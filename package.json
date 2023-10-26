@@ -1,0 +1,42 @@
+{
+  "name": "sway-study-center",
+  "version": "1.0.0",
+  "description": "study-center",
+  "main": ".prettierrc.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "type": "module",
+  "scripts": {
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs",
+    "docs:serve": "vitepress serve docs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@git.100tal.com:bigclass_xuefu_fe/sway-study-center.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@arco-design/web-vue": "^2.52.1",
+    "@giscus/vue": "^2.3.0",
+    "@iconify/json": "^2.2.132",
+    "@swayjs/prettier-config": "^1.0.0",
+    "date-fns": "^2.30.0",
+    "markdown-it": "^13.0.2",
+    "markdown-it-footnote": "^3.0.3",
+    "markdown-it-mathjax3": "^4.3.2",
+    "unocss": "^0.57.1",
+    "unplugin-icons": "^0.17.1",
+    "unplugin-vue-components": "^0.25.2",
+    "vitepress": "1.0.0-rc.24",
+    "vue": "^3.3.6"
+  },
+  "volta": {
+    "node": "20.5.0",
+    "pnpm": "8.6.11"
+  }
+}
