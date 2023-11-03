@@ -1,16 +1,17 @@
-import { watch } from 'vue';
+import { watch, onMounted, nextTick } from 'vue';
 
 // // https://vitepress.dev/guide/custom-theme
 // import Theme from 'vitepress/theme'
 // import './style.css'
 import DefaultTheme from 'vitepress/theme';
 import NewLayout from './components/new-layout.vue';
+import mediumZoom from 'medium-zoom'
 import './rainbow.css'
 import './vars.css'
 import './overrides.css'
 import 'uno.css';
 // import './custom.css';
-// import { useData, useRoute } from 'vitepress';
+import { useRoute } from 'vitepress';
 let homePageStyle: HTMLStyleElement | undefined
 
 export default {
@@ -41,6 +42,17 @@ export default {
   //   // 获取前言和路由
   //   const { frontmatter } = useData();
   //   const route = useRoute();
+    const route = useRoute()
+    const initZoom = () => {
+      mediumZoom('.main img', { background: 'var(--vp-c-bg)' }) // Should there be a new?
+    }
+    onMounted(() => {
+      initZoom()
+    })
+    watch(
+      () => route.path,
+      () => nextTick(() => initZoom()),
+    )
   }
 };
 

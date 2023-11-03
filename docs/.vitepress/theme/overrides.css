@@ -93,3 +93,8 @@ table {
 .dark::view-transition-old(root) {
   z-index: 9999;
 }
+
+/* .medium-zoom 样式覆盖,解决无法放大模式被遮挡的问题 */
+.medium-zoom-image {
+  z-index: 1;
+}

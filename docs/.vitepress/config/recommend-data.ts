@@ -280,6 +280,23 @@ export const examples: Example[] = [
             url: 'https://driverjs.com/docs/installation'
           }
         ]
+      },
+      {
+        name: 'medium-zoom',
+        desc: '图片放大工具js库',
+        icon: 'inject',
+        links: [
+          {
+            channel: '官网',
+            icon: 'i-mdi-web',
+            url: 'https://medium-zoom.francoischalifour.com/',
+          },
+          {
+            channel: 'github',
+            icon: 'i-logos-github-icon dark:invert',
+            url: 'https://github.com/francoischalifour/medium-zoom'
+          }
+        ]
       }
     ]
   },
