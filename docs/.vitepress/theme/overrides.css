@@ -96,5 +96,5 @@ table {
 
 /* .medium-zoom 样式覆盖,解决无法放大模式被遮挡的问题 */
 .medium-zoom-image {
-  z-index: 1;
+  z-index: 30;
 }
