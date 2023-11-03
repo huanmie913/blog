@@ -92,6 +92,18 @@ export const examples: Example[] = [
         ]
       },
       {
+        name: 'html/css',
+        desc: 'Html和CSS教程(英)',
+        icon: 'inject',
+        logo: 'html-css.png',
+        links: [
+          {
+            url: 'https://internetingishard.netlify.app/html-and-css/',
+            channel: '官网',
+          }
+        ]
+      },
+      {
         name: 'NodeJS',
         desc: 'NodeJs相关文档',
         icons: [
@@ -149,6 +161,24 @@ export const examples: Example[] = [
             icon: 'i-mdi-web',
             url: 'https://kubernetes.io/zh/docs/home/',
           }
+        ]
+      },
+      {
+        name: '深入架构原理与实践',
+        logo: 'architecture.png',
+        icon: 'inject',
+        desc: '深入架构原理与实践',
+        links: [
+          {
+            channel: '官网',
+            url: 'https://www.thebyte.com.cn/',
+            icon: 'i-mdi-web',
+          },
+          {
+            channel: 'github',
+            icon: 'i-logos-github-icon dark:invert',
+            url: 'https://github.com/isno/theByteBook'
+          },
         ]
       }
     ]
@@ -248,6 +278,30 @@ export const examples: Example[] = [
             channel: '文档',
             icon: 'i-simple-line-icons-docs dark:invert',
             url: 'https://driverjs.com/docs/installation'
+          }
+        ]
+      }
+    ]
+  },
+// 安全.资源
+  {
+    title: '安全资源',
+    children: [
+      {
+        name: '雷池',
+        desc: '简单、好用、强大的免费WAF',
+        logo: 'safe-line.png',
+        icon: 'inject',
+        links: [
+          {
+            channel: '官网',
+            icon: 'i-mdi-web',
+            url: 'https://waf-ce.chaitin.cn/'
+          },
+          {
+            channel: 'github',
+            icon: 'i-logos-github-icon dark:invert',
+            url: 'https://github.com/chaitin/SafeLine'
           }
         ]
       }
