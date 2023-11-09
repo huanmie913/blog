@@ -32,4 +32,5 @@ export const vite = {
     }),
     UnoCSS()
   ],  
+  ssr: { noExternal: ['@arco-design/web-vue'] },
 }

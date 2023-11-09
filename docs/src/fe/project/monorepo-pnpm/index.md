@@ -1,3 +1,13 @@
+---
+title: 使用pnpm的workspace、changeset实现monorepo
+date: 2023-04-09
+tags:
+  - git
+  - pnpm
+categories:
+	- 工程化
+---
+
 # 使用pnpm的workspace、changeset实现monorepo
 
 ## 为什么选择 pnpm

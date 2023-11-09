@@ -1,5 +1,10 @@
 ---
+title: TypeScript入门总结（二）
 date: 2023-10-20
+tags: 
+  - typescript(ts)
+categories:
+	- 前端技术
 ---
 
 # TypeScript入门总结（二）

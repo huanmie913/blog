@@ -1,5 +1,10 @@
 ---
+title: d.ts 描述文件
 date: 2023-10-20
+tags: 
+  - typescript(ts)
+categories:
+	- 前端技术
 ---
 # d.ts 描述文件
 > 参考信息

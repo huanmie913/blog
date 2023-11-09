@@ -11,9 +11,17 @@ export function getDate(date: string): string | null {
   return format(parseISO(date), formatString)
 }
 
-export function getFromNow(date: string): string | null {
+export function getFromNow(date: string | number): string | null {
   if (!date) {
     return null
   }
-  return formatDistance(parseISO(date), new Date(), { addSuffix: true });
+
+  let isoDate = ''
+  if (typeof date === 'number') {
+    isoDate = new Date(date).toISOString()
+  } else {
+    isoDate = date
+  }
+
+  return formatDistance(parseISO(isoDate), new Date(), { addSuffix: true });
 }

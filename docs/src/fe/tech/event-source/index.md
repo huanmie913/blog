@@ -1,3 +1,12 @@
+---
+title: EventSource之关于ChatGPT的文本流显示实现方式
+date: 2023-04-09
+tags:
+  - event
+categories:
+	- 前端技术
+---
+
 # EventSource之关于ChatGPT的文本流显示实现方式
 
 > 来源：@任群的TTC文章

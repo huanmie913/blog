@@ -1,5 +1,10 @@
 ---
+title: git config配置多用户场景
 date: 2023-10-24
+tags:
+	- git
+categories:
+	- 工程化
 ---
 
 # git config配置多用户场景
@@ -46,7 +51,7 @@ open .git/config
 - `.gitconfig-work` // 公司工程配置文件
 
 全局通用配置文件`~/.gitconfig`里面的内容是：主要是通过`includeIf`配置匹配不用的目录映射到不同配置文件上：
-```git
+```shell
 [includeIf "gitdir:~/self-workspace/"]
     path = .gitconfig-self
 [includeIf "gitdir:~/workspace/"]
@@ -54,14 +59,14 @@ open .git/config
 ```
 
 个人工程配置文件`~/.gitconfig-self`：
-```git
+```shell
 [user]
 	name = yourname-self
 	email = yourname-self@gmail.com
 ```
 
 公司工程配置文件`~/.gitconfig-work`：
-```git
+```shell
 [user]
 	name = yourname-work
 	email = yourname-work@yourCompanyName.com

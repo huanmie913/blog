@@ -1,5 +1,10 @@
 ---
-date: '2023-10-20'
+title: 跨域详解&CORS
+date: 2023-10-20
+tags:
+  - 跨域
+categories:
+  - 前端技术
 ---
 
 # 跨域详解&CORS

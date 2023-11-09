@@ -42,3 +42,19 @@ github：https://github.com/shd101wyy/vscode-markdown-preview-enhanced
 集成Vditor, 实现了对markdown的所见即所得编辑  
 vscode插件：https://marketplace.visualstudio.com/items?itemName=cweijan.vscode-office  
 github：https://github.com/cweijan/vscode-office/blob/HEAD/README-CN.md  
+
+### 文档编写注意事项
+#### md文件的yaml头部模板
+```
+title: 我是标题 
+date: 2023-11-11
+tags:
+	- tag1 
+  - tag2 
+categories:
+  - category1 
+  - category2
+```
+注意事项：
+1. “缩进” 仅支持空格，缩进对齐为同一维数组
+1. ":" 后需要有一个空格

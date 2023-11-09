@@ -1,5 +1,10 @@
 ---
+title: git同一个项目使用多个远程仓库
 date: 2023-04-09
+tags:
+	- git
+categories:
+	- 工程化
 ---
 # git同一个项目使用多个远程仓库
 

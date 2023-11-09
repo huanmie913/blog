@@ -94,7 +94,25 @@ table {
   z-index: 9999;
 }
 
+/*
+* 以下为自定义样式
+*/
+
 /* .medium-zoom 样式覆盖,解决无法放大模式被遮挡的问题 */
 .medium-zoom-image {
   z-index: 30;
+}
+
+/* 归档页面.生肖 */
+.chinese-zodiac {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: -10.5px;
+  top: -1px;
+  background: #fff;
+  border: 1px solid #84b9e5;
+  border-radius: 50%;
+  cursor: pointer;
 }
