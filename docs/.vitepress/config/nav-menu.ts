@@ -109,7 +109,7 @@ export const sidebar: DefaultTheme.Sidebar = {
           text: 'Nginx',
           items: [  
             { text: '常用命令及配置', link: '/op/nginx/command-configuration/index.md'},
-            { text: 'location优先级', link: '/op/nginx/location/location-priority.md' },
+            { text: 'location优先级', link: '/op/nginx/location/location-priority/' },
           ]
         }
       ],
