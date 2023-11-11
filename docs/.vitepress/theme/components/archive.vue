@@ -74,7 +74,7 @@
           </div>
         </div>
       </div>
-      <!-- <div id="main"></div> -->
+      <div id="main"></div>
     </div>
   </div>
 </template>
@@ -142,6 +142,13 @@ function initTimeline() {
   // 2.按年、月进行归档
   for (let i = 0; i < $articleData.length; i++) {
     const article = $articleData[i];
+
+    // 过滤掉没有date属性的文章
+    if (!article.date) {
+      console.warn('文章缺少date属性, 请检查: ', article)
+      continue
+    }
+
     let year = new Date(article.date).getFullYear() + "年";
     let month = new Date(article.date).getMonth() + 1 + "月";
 
@@ -155,7 +162,11 @@ function initTimeline() {
     archiveData[year][month].push(article);
   }
 }
+
+
 initTimeline();
+
+console.log('archiveData', archiveData)
 </script>
 
 <style scoped>

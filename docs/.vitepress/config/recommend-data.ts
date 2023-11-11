@@ -1,3 +1,4 @@
+import { github } from './../../../../chodocs/docs/.vitepress/meta';
 
 export interface Link {
   url: string
@@ -26,7 +27,7 @@ export interface Example {
 
 // @unocss-include
 export const examples: Example[] = [
-// 技术类.电子书.手册
+  // 技术类.电子书.手册
   {
     title: '技术类.电子书.手册',
     children: [
@@ -183,7 +184,7 @@ export const examples: Example[] = [
       }
     ]
   },
-// 前端开发.资源 
+  // 前端开发.资源 
   {
     title: '前端开发.资源',
     children: [
@@ -218,7 +219,25 @@ export const examples: Example[] = [
           },
           {
             channel: '图标库',
-            url: 'https://icones.js.org/',  
+            url: 'https://icones.js.org/',
+          }
+        ]
+      },
+      {
+        name: 'IconGo',
+        desc: 'SVG图标库',
+        icon: 'inject',
+        logo: 'icon-go.png',
+        links: [
+          {
+            channel: '官网',
+            icon: 'i-mdi-web',
+            url: 'https://icongo.github.io/',
+          },
+          {
+            channel: 'github',
+            icon: 'i-logos-github-icon dark:invert',
+            url: 'https://github.com/jaywcjlove/icongo'
           }
         ]
       },
@@ -300,30 +319,7 @@ export const examples: Example[] = [
       }
     ]
   },
-// 安全.资源
-  {
-    title: '安全资源',
-    children: [
-      {
-        name: '雷池',
-        desc: '简单、好用、强大的免费WAF',
-        logo: 'safe-line.png',
-        icon: 'inject',
-        links: [
-          {
-            channel: '官网',
-            icon: 'i-mdi-web',
-            url: 'https://waf-ce.chaitin.cn/'
-          },
-          {
-            channel: 'github',
-            icon: 'i-logos-github-icon dark:invert',
-            url: 'https://github.com/chaitin/SafeLine'
-          }
-        ]
-      }
-    ]
-  },
+
   {
     title: '效率工具',
     children: [
@@ -364,6 +360,11 @@ export const examples: Example[] = [
             url: 'https://manual.raycast.com/',
             icon: 'i-simple-line-icons-docs dark:invert',
           },
+          {
+            channel: '插件',
+            url: '/subject/tools/raycast/',
+            icon: 'i-clarity:plugin-line dark:invert',
+          }
         ]
       },
       {
@@ -424,10 +425,34 @@ export const examples: Example[] = [
       }
     ]
   },
+  // 安全.资源
+  {
+    title: '安全资源',
+    children: [
+      {
+        name: '雷池',
+        desc: '简单、好用、强大的免费WAF',
+        logo: 'safe-line.png',
+        icon: 'inject',
+        links: [
+          {
+            channel: '官网',
+            icon: 'i-mdi-web',
+            url: 'https://waf-ce.chaitin.cn/'
+          },
+          {
+            channel: 'github',
+            icon: 'i-logos-github-icon dark:invert',
+            url: 'https://github.com/chaitin/SafeLine'
+          }
+        ]
+      }
+    ]
+  },
   // {
   //   title: '流程图&图表',
   //   children: [
-      
+
   //   ]
   // }
 ]

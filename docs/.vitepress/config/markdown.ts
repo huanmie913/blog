@@ -24,6 +24,7 @@ export const markdown: MarkdownOptions = {
     detailsLabel: "详细信息"
   },
   lineNumbers: true, // 启用行号
+  breaks: true, // 启用换行符
   config: (md) => {
     md.use(mathjax3);
     md.use(footnote);

@@ -19,13 +19,13 @@ export const nav: DefaultTheme.NavItem[] = [
     ]
   },
   */
-  { text: '运维&网络', link: '/op/cors/index.md' },
+  { text: '运维&网络', link: '/archives?category=运维|网络' },
   {
     text: '技术专题',
     items: [
       { text: '时间、时区', link: '/subject/date-time-zone/index.md' },
       { text: '正则表达式', link: '/subject/regexp/index.md' },
-      { text: '工具收集', link: '/subject/tools/index.md' },
+      { text: '工具收集', link: '/subject/tools/index/index.md' },
     ]
   },
   {
@@ -100,6 +100,12 @@ export const sidebar: DefaultTheme.Sidebar = {
       items: [
         { text: '跨域详解', link: '/op/cors/index.md' },
         { text: 'linux之前后台命令', link: '/op/linux.fe.be.order/index.md' },
+        { 
+          text: 'Nginx',
+          items: [  
+            { text: '常用命令及配置', link: '/op/nginx/command-configuration/index.md'}
+          ]
+        }
       ],
     },
   ],

@@ -45,7 +45,7 @@ export default defineConfig({
     logo: '/logo.png',
     // siteTitle: '组件库标题',
     socialLinks: [{ icon: 'github', link: github }],
-    outline: [1, 6], // 默认值，deep = [2, 6]
+    outline: [2, 6], // 默认值，deep = [2, 6]
     outlineTitle: '文章大纲',
     // 菜单栏配置
     nav,
