@@ -68,4 +68,5 @@ export default defineConfig({
       options: algoliaSearchOptions,
     },
   },
+  map: true, // 使用MPA模式，即多页面模式。 https://vitepress.dev/guide/mpa-mode
 });

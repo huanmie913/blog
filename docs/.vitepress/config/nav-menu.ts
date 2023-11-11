@@ -35,8 +35,13 @@ export const nav: DefaultTheme.NavItem[] = [
       { text: '言论', link: '/life/speech/index.md' },
     ]
   },
-  { text: '标签', link: '/tags' },
-  { text: '归档', link: '/archives' },
+  { 
+    text: '归档', 
+    items: [
+      { text: '归档', link: '/archives' },
+      { text: '标签', link: '/tags' },
+    ]
+  },
 ];
 
 /**
