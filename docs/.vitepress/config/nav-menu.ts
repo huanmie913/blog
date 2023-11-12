@@ -103,8 +103,15 @@ export const sidebar: DefaultTheme.Sidebar = {
     {
       text: '运维&网络',
       items: [
-        { text: '跨域详解', link: '/op/cors/index.md' },
         { text: 'linux之前后台命令', link: '/op/linux.fe.be.order/index.md' },
+        { 
+          text: '跨域',
+          items: [
+            { text: '跨域详解', link: '/op/cors/index/index.md' },
+            { text: '缓存CORS的OPTION请求', link: '/op/cors/cache-option/index.md'}
+          ]
+        },
+        { text: '跨域详解', link: '/op/cors/index.md' },
         { 
           text: 'Nginx',
           items: [  
