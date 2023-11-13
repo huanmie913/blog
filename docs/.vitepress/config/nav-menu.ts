@@ -111,7 +111,6 @@ export const sidebar: DefaultTheme.Sidebar = {
             { text: '缓存CORS的OPTION请求', link: '/op/cors/cache-option/index.md'}
           ]
         },
-        { text: '跨域详解', link: '/op/cors/index.md' },
         { 
           text: 'Nginx',
           items: [  
