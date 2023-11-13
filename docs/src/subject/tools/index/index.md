@@ -47,6 +47,14 @@ FinClip 提供一套 SDK，不仅支持手机（iPhone、Android），还支持�
 一个免费的 Windows 卸载程序**
 号称可以准确、完整地卸载各种 Windows 软件，残留最少。参见[作者自述](https://jv16powertools.com/blog/comparing-windows-uninstallers-and-making-uninstalr/) ![img](./1697956101213-2.png)
 
+
+#### [DevToys](https://devtoys.app/)
+
+一款 Windows 的小工具集合，收入了开发者会用到的许多小工具。
+
+![img](https://cdn.beekka.com/blogimg/asset/202310/bg2023100805.webp)
+
+
 ### AI相关
 
 #### [**ChatGPT 中文网页版**](https://github.com/Yidadaa/ChatGPT-Next-Web)
@@ -54,6 +62,12 @@ FinClip 提供一套 SDK，不仅支持手机（iPhone、Android），还支持�
 一个开源的 ChatGPT 中文网页版，做得非常精致，可以自己部署。这里是 [Demo](https://chatgpt.gitapp.cn/)。
 
 ![img](./1699682955886-0.png)
+
+#### [Inke](https://github.com/yesmore/inke)
+
+Notion 风格的开源 Web 笔记本，集成了 AI 自动补全（需要 OpenAI Key）。
+
+![img](https://cdn.beekka.com/blogimg/asset/202310/bg2023101004.webp)
 
 ### AI/图像/图片.处理
 
@@ -86,3 +100,11 @@ FinClip 提供一套 SDK，不仅支持手机（iPhone、Android），还支持�
 开源的图标搜索引擎
 
 ![img](https://cdn.beekka.com/blogimg/asset/202211/bg2022111007.webp)
+
+
+
+#### [Dexie.js](https://github.com/dexie/Dexie.js)
+
+浏览器原生数据库 IndexedDB 的包装库，提供易于操作的 API。
+
+![img](https://cdn.beekka.com/blogimg/asset/202308/bg2023080901.webp)

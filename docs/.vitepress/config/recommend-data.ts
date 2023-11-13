@@ -1,5 +1,6 @@
-import { github } from './../../../../chodocs/docs/.vitepress/meta';
-
+/**
+ * 首页.推荐数据.数据结构
+ */
 export interface Link {
   url: string
   icon?: string
@@ -180,6 +181,18 @@ export const examples: Example[] = [
             icon: 'i-logos-github-icon dark:invert',
             url: 'https://github.com/isno/theByteBook'
           },
+        ]
+      },
+      {
+        name: 'Will it CORS?',
+        icon: 'i-carbon:http dark:invert',
+        desc: 'CORS跨域查询测试',
+        links: [
+          {
+            channel: '官网',
+            url: 'https://httptoolkit.tech/will-it-cors/',
+            icon: 'i-mdi-web',
+          }
         ]
       }
     ]
