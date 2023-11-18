@@ -55,6 +55,7 @@ export const sidebar: DefaultTheme.Sidebar = {
       items: [
         { text: '保险报销', link: '/life/healthy/insurance-submit-expense/index.md' },
         { text: '亲情账户&家庭共济账户', link: '/life/healthy/two-account/index.md' },
+        { text: '家庭常备药&儿科急诊医院', link: '/life/healthy/family-medicine-checklist/index.md'}
       ]
     }
   ],
