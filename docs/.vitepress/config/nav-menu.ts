@@ -106,6 +106,12 @@ export const sidebar: DefaultTheme.Sidebar = {
       items: [
         { text: 'linux之前后台命令', link: '/op/linux.fe.be.order/index.md' },
         { 
+          text: 'HTTP',
+          items: [
+            { text: 'HTTP缓存机制', link: '/op/http/cache/index.md' },
+          ]
+        },
+        { 
           text: '跨域',
           items: [
             { text: '跨域详解', link: '/op/cors/index/index.md' },
