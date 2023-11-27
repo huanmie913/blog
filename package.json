@@ -22,9 +22,9 @@
   "license": "ISC",
   "devDependencies": {
     "@antv/g2plot": "^2.4.31",
-    "@arco-design/web-vue": "^2.52.1",
+    "@arco-design/web-vue": "^2.53.2",
     "@giscus/vue": "^2.3.0",
-    "@iconify/json": "^2.2.132",
+    "@iconify/json": "^2.2.144",
     "@swayjs/prettier-config": "^1.0.0",
     "blueimp-md5": "^2.19.0",
     "date-fns": "^2.30.0",
@@ -32,12 +32,12 @@
     "markdown-it": "^13.0.2",
     "markdown-it-footnote": "^3.0.3",
     "markdown-it-mathjax3": "^4.3.2",
-    "medium-zoom": "^1.0.8",
-    "unocss": "^0.57.1",
-    "unplugin-icons": "^0.17.1",
+    "medium-zoom": "^1.1.0",
+    "unocss": "^0.57.6",
+    "unplugin-icons": "^0.17.4",
     "unplugin-vue-components": "^0.25.2",
-    "vitepress": "1.0.0-rc.24",
-    "vue": "^3.3.6"
+    "vitepress": "1.0.0-rc.29",
+    "vue": "^3.3.8"
   },
   "volta": {
     "node": "20.5.0",
