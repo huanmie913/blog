@@ -66,7 +66,8 @@ pnpm init
 }
 ```
 
-[preinstall](https://docs.npmjs.com/cli/v6/using-npm/scripts#pre--post-scripts) 脚本会在 `install` 之前执行，现在，只要有人运行 `npm install` 或 `yarn install`，就会调用 [only-allow](https://github.com/pnpm/only-allow) 去限制只允许使用 `pnpm` 安装依赖。`<br />`如果您使用 ` npm v7`，请改用 `npx -y`
+[preinstall](https://docs.npmjs.com/cli/v6/using-npm/scripts#pre--post-scripts) 脚本会在 `install` 之前执行，现在，只要有人运行 `npm install` 或 `yarn install`，就会调用 [only-allow](https://github.com/pnpm/only-allow) 去限制只允许使用 `pnpm` 安装依赖。
+如果您使用 ` npm v7`，请改用 `npx -y`
 
 ### 配置 `pnpm workspaces`
 
@@ -105,12 +106,14 @@ packages:
 - 过滤允许您将命令限制于包的特定子集
 - 给某个 `package`（`workspace`定义的子包）单独安装指定依赖，例如：
 - 注意：`--filter` 参数跟着的是 `package`下的 package.json 的 `name` 字段，并不是目录名
-- 例如：使用 `--filter`执行 `@sway/monorepo-pkg-a` 下 `scripts` 脚本：`<br />pnpm build --filter @sway/monorepo-pkg-a`
-- `filter` 后面除了可以指定具体的包名，还可以跟着匹配规则来指定对匹配上规则的包进行操作，比如：`<br />pnpm build --filter "./packages/**"`
+- 例如：使用 `--filter`执行 `@sway/monorepo-pkg-a` 下 `scripts` 脚本：`pnpm build --filter @sway/monorepo-pkg-a`
+- `filter` 后面除了可以指定具体的包名，还可以跟着匹配规则来指定对匹配上规则的包进行操作，比如：
+`pnpm build --filter "./packages/**"`
 
 #### 模块（子包/package）之间的相互依赖
 
-我们在开发时经常遇到的场景，比如 `monorepo-pkg-b` 中将 `monorepo-pkg-a` 作为依赖进行安装。`<br />`基于 `pnpm` 提供的 `workspace:协议`，可以方便的在 `packages` 内部进行互相引用。`<br />`例如：在 `monorepo-pkg-b` 中引用 `monorepo-pkg-a`。
+我们在开发时经常遇到的场景，比如 `monorepo-pkg-b` 中将 `monorepo-pkg-a` 作为依赖进行安装。基于 `pnpm` 提供的 `workspace:协议`，可以方便的在 `packages` 内部进行互相引用。
+例如：在 `monorepo-pkg-b` 中引用 `monorepo-pkg-a`。
 
 ```powershell
 # 可在任意目录执行，建议在根目录
@@ -129,15 +132,20 @@ pnpm add @sway/monorepo-pkg-a
 },
 ```
 
-在设置依赖版本的时候推荐用 `workspace:*`，这样就可以保持依赖的版本是工作空间里最新版本，不需要每次手动更新依赖版本。`<br />`当 `pnpm publish` 的时候，会自动将 `package.json` 中的 `workspace` 修正为对应的版本号。
+在设置依赖版本的时候推荐用 `workspace:*`，这样就可以保持依赖的版本是工作空间里最新版本，不需要每次手动更新依赖版本。
+当 `pnpm publish` 的时候，会自动将 `package.json` 中的 `workspace` 修正为对应的版本号。
 
 #### `pnpm -r, --recursive`
 
-官网文档链接（pnpm -r）：[https://pnpm.io/zh/cli/recursive](https://pnpm.io/zh/cli/recursive) `<br />`官网文档链接（pnpm run -r）：[https://pnpm.io/zh/cli/run#--recursive--r](https://pnpm.io/zh/cli/run#--recursive--r) `<br />`在工作区的每个项目中运行命令，但不包括根目录，如需包含根目录，需将 [`include-workspace-root`]设置为 `true`。`<br />`注意：这将从每个包 `package.json`中的“`scripts`”中运行一个对应的命令。如果包没有该命令，则跳过该命令。如果所有包都没有该命令，则该命令将失败。
+官网文档链接（pnpm -r）：[https://pnpm.io/zh/cli/recursive](https://pnpm.io/zh/cli/recursive) 
+官网文档链接（pnpm run -r）：[https://pnpm.io/zh/cli/run#--recursive--r](https://pnpm.io/zh/cli/run#--recursive--r) 
+在工作区的每个项目中运行命令，但不包括根目录，如需包含根目录，需将 [`include-workspace-root`]设置为 `true`。
+注意：这将从每个包 `package.json`中的“`scripts`”中运行一个对应的命令。如果包没有该命令，则跳过该命令。如果所有包都没有该命令，则该命令将失败。
 
 #### `pnpm run --parallel`
 
-官网文档链接：[https://pnpm.io/zh/cli/run#--parallel](https://pnpm.io/zh/cli/run#--parallel) `<br />`完全忽略并发和拓扑排序，在所有匹配的包中立即运行给定的脚本 并输出前缀流。 这是个推荐的标志，用于在许多 packages上长时间运行的进程，例如冗长的构建进程。
+官网文档链接：[https://pnpm.io/zh/cli/run#--parallel](https://pnpm.io/zh/cli/run#--parallel) 
+完全忽略并发和拓扑排序，在所有匹配的包中立即运行给定的脚本 并输出前缀流。 这是个推荐的标志，用于在许多 packages上长时间运行的进程，例如冗长的构建进程。
 
 ## 使用 `pnpm` 管理依赖
 
@@ -165,13 +173,18 @@ packages:
   - 'packages/**'
 ```
 
-在 `pnpm-workspace.yaml` 里面我们声明了 `packages` 目录下的子目录都会被加入到 `workspace` 中，那么 `pnpm` 将根据会在 `workspace` 中子包的依赖关系，自动链接这些子包。比如上述的例子会将 ` pkg-a` 链接到 `pkg-b`。`<br />`现在让我们在项目根目录执行 ` pnpm install` 看一下效果：`<br />`![image.png](./1697953247066-0.png)
+在 `pnpm-workspace.yaml` 里面我们声明了 `packages` 目录下的子目录都会被加入到 `workspace` 中，那么 `pnpm` 将根据会在 `workspace` 中子包的依赖关系，自动链接这些子包。比如上述的例子会将 ` pkg-a` 链接到 `pkg-b`。
+现在让我们在项目根目录执行 ` pnpm install` 看一下效果：
+![image.png](./1697953247066-0.png)
 
 这里在 ` b/node_modules` 目录下可以看到，`pkg-a `已经自动 link 到 `pkg-b` 下了。
 
 ### 构建 `package` 产物
 
-依赖安装好了以后，我们需要对子包进行构建。在项目根目录下执行 `pnpm run build` 来对每个子包进行构建：`<br />`![image.png](./1697953247066-1.png) `<br />`可以看到，`pkg-a` 和 `pkg-c`先执行 `build` 命令，等他们执行完成后，`pkg-b `再执行 `build`。`<br />`为什么执行 `pnpm run build` 就变成这样呢？其实在项目根目录的 `package.json` 中预先写好了 `build` 脚本：
+依赖安装好了以后，我们需要对子包进行构建。在项目根目录下执行 `pnpm run build` 来对每个子包进行构建：
+![image.png](./1697953247066-1.png) 
+可以看到，`pkg-a` 和 `pkg-c`先执行 `build` 命令，等他们执行完成后，`pkg-b `再执行 `build`。
+为什么执行 `pnpm run build` 就变成这样呢？其实在项目根目录的 `package.json` 中预先写好了 `build` 脚本：
 
 ```json
 {
@@ -225,8 +238,11 @@ pnpm changeset init
 > 注意：`config.js`相关说明
 >
 > - `config.json`官网说明文件链接： [https://github.com/changesets/changesets/blob/main/docs/config-file-options.md](https://github.com/changesets/changesets/blob/main/docs/config-file-options.md)
-> - `baseBranch`字段（`changeset`的 `2.26.1`版本使用的默认值为 `main`），该字段表示的分支必须存在于仓库中，否则在使用"`pnpm changeset`"命令时，会触发错误：“`Failed to find where HEAD diverged from main. Does main exist?`”。`<br />`建议该字段为仓库默认字段，例如：“`master`”
-> - `ignore` (array of packages)：此选项允许您指定一些不会发布的包。`<br />`（这个特性是为了临时使用而设计的，可以在不发布变更的情况下合并它们——如果你想阻止一个包被发布，在 `package.json` 中设置 `private: true`，`package.json`的 `private`的[官网文档](https://docs.npmjs.com/cli/v9/configuring-npm/package-json#private)）`<br />`详情参考[changeset-doc](https://github.com/changesets/changesets/blob/main/docs/config-file-options.md#ignore-array-of-packages)
+> - `baseBranch`字段（`changeset`的 `2.26.1`版本使用的默认值为 `main`），该字段表示的分支必须存在于仓库中，否则在使用"`pnpm changeset`"命令时，会触发错误：“`Failed to find where HEAD diverged from main. Does main exist?`”。
+建议该字段为仓库默认字段，例如：“`master`”
+> - `ignore` (array of packages)：此选项允许您指定一些不会发布的包。
+（这个特性是为了临时使用而设计的，可以在不发布变更的情况下合并它们——如果你想阻止一个包被发布，在 `package.json` 中设置 `private: true`，`package.json`的 `private`的[官网文档](https://docs.npmjs.com/cli/v9/configuring-npm/package-json#private)）
+详情参考[changeset-doc](https://github.com/changesets/changesets/blob/main/docs/config-file-options.md#ignore-array-of-packages)
 
 ### 发布第一个版本
 
@@ -240,27 +256,36 @@ pnpm changeset init
 
 ### 生成 `changeset` 文件
 
-假设现在要进行一个迭代，我们从主分支上切一个 `release/0.1.0` 分支出来。我们在 `packages/a/index.ts` 文件中随便添加一行代码，并提交到远程仓库。`<br />pkg-a` 代码发生变更了，我们需要发一个版本给用户使用。这时候我们在项目根目录下执行以下命令来选择要发布的包以及包的版本类型（`patch`、`minor`、`major`，严格遵循 [semver](https://semver.org/) 规范）：
+假设现在要进行一个迭代，我们从主分支上切一个 `release/0.1.0` 分支出来。我们在 `packages/a/index.ts` 文件中随便添加一行代码，并提交到远程仓库。`pkg-a` 代码发生变更了，我们需要发一个版本给用户使用。这时候我们在项目根目录下执行以下命令来选择要发布的包以及包的版本类型（`patch`、`minor`、`major`，严格遵循 [semver](https://semver.org/) 规范）：
 
 ```shell
 pnpm changeset
 ```
 
-`changeset` 通过 ` git diff` 和构建依赖图来获得要发布的包。我们选择发布 `pkg-a`：`<br />`（注意：使用 **_方向键_** 选择分支，使用空格_**选中/取消选中**_）`<br />`![image.png](./1697953247066-2.png) `<br />`可以选择 `major`、`minor`、`patch`三种方式来管理版本类型。`<br />`**操作方法**
+`changeset` 通过 ` git diff` 和构建依赖图来获得要发布的包。我们选择发布 `pkg-a`：
+（注意：使用 **_方向键_** 选择分支，使用空格_**选中/取消选中**_）
+![image.png](./1697953247066-2.png) 
+可以选择 `major`、`minor`、`patch`三种方式来管理版本类型。
+**操作方法**
 
 - 使用**方向键**选择分支
 - 使用**空格选中/取消选中**（支持多选）
 - 使用**回车**选择_版本类型_
 
-我们选择 `patch` ，更新最小版本号；填写 `changelog`；`<br />`![image.png](./1697953247066-3.png)
+我们选择 `patch` ，更新最小版本号；填写 `changelog`；
+![image.png](./1697953247066-3.png)
 
-填写完毕后，会发现 `.changset`文件，多出来一个文件名随机的 `changeset` 文件：`<br />`![image.png](./1697953247066-4.png)
+填写完毕后，会发现 `.changset`文件，多出来一个文件名随机的 `changeset` 文件：
+![image.png](./1697953247066-4.png)
 
-这个文件的本质是对包的版本和 `Changelog` 做一个预存储，我们也可以在这些文件中修改信息。随着不同开发者进行开发迭代积累，`changeset` 可能会有多个的，比如 `pnpm` 仓库：`<br />`![](./1697953247066-5.png)`<br />`这些 `changeset` 文件是需要一并提交到远程仓库中的。在后面的包发布后，这些 changeset 文件是会被自动消耗掉的。
+这个文件的本质是对包的版本和 `Changelog` 做一个预存储，我们也可以在这些文件中修改信息。随着不同开发者进行开发迭代积累，`changeset` 可能会有多个的，比如 `pnpm` 仓库：
+![](./1697953247066-5.png)
+这些 `changeset` 文件是需要一并提交到远程仓库中的。在后面的包发布后，这些 changeset 文件是会被自动消耗掉的。
 
 ### 发布测试版本
 
-假设现在我们要发布一个测试的版本来看下功能是否正常，我们可以使用 `changeset` 的 [Prereleases](https://github.com/changesets/changesets/blob/main/docs/prereleases.md) 功能。`<br />`通过执行 `pnpm changeset pre enter <tag> `命令进入先进入 `pre` 模式。
+假设现在我们要发布一个测试的版本来看下功能是否正常，我们可以使用 `changeset` 的 [Prereleases](https://github.com/changesets/changesets/blob/main/docs/prereleases.md) 功能。
+通过执行 `pnpm changeset pre enter <tag> `命令进入先进入 `pre` 模式。
 
 ```shell
 # ① 发布 alpha 版本
@@ -276,11 +301,19 @@ pnpm changeset pre enter beta
 pnpm changeset pre enter rc  
 ```
 
-这里我运行第二条命令，选择发布 beta 版本。`<br />`然后执行 ` pnpm changeset version` 修改包的版本：
+这里我运行第二条命令，选择发布 beta 版本。
+然后执行 ` pnpm changeset version` 修改包的版本：
 
-图：执行命令 `<br />`![image.png](./1697953247066-6.png)
+图：执行命令 
+![image.png](./1697953247066-6.png)
 
-图：查看文件对比 `<br />`可以看到 `pkg-a` 的版本改成了 `0.1.0-beta.0`，`pkg-b` 依赖的 `pkg-a` 版本也对应修改了。`<br />`![image.png](./1697953247066-7.png) `<br />`![image.png](./1697953247066-8.png) `<br />`这时执行 `pnpm run build && pnpm changeset publish` 发布 beta 版本：`<br />`![image.png](./1697953247066-9.png) `<br />`完成版本发布之后，退出 `Prereleases` 模式：
+图：查看文件对比 
+可以看到 `pkg-a` 的版本改成了 `0.1.0-beta.0`，`pkg-b` 依赖的 `pkg-a` 版本也对应修改了。
+![image.png](./1697953247066-7.png) 
+![image.png](./1697953247066-8.png) 
+这时执行 `pnpm run build && pnpm changeset publish` 发布 beta 版本：
+![image.png](./1697953247066-9.png) 
+完成版本发布之后，退出 `Prereleases` 模式：
 
 ```shell
 pnpm changeset pre exit
@@ -288,7 +321,9 @@ pnpm changeset pre exit
 
 ![image.png](./1697953247066-10.png)
 
-这时，我们需要把变更的内容提交到远程仓库中。`<br />`一方面，便于后面查看每次测试版本发布的变更记录；`<br />`另一方面，`changesets` 默认不会到 `npm` 中查找当前包最新的测试包版本号并自动加1，它是根据当前仓库的测试包版本号再往上递增生成新的版本号。
+这时，我们需要把变更的内容提交到远程仓库中。
+一方面，便于后面查看每次测试版本发布的变更记录；
+另一方面，`changesets` 默认不会到 `npm` 中查找当前包最新的测试包版本号并自动加1，它是根据当前仓库的测试包版本号再往上递增生成新的版本号。
 
 ### 发布正式版本
 
@@ -302,13 +337,16 @@ pnpm changeset version
 >
 > - 发布正式版本时，`.changeset` 中的临时文件会被删除
 
-`<br />`![image.png](./1697953247066-11.png) `<br />`然后我们执行以下命令发布正式版本：
+
+![image.png](./1697953247066-11.png) 
+然后我们执行以下命令发布正式版本：
 
 ```shell
 pnpm changeset publish
 ```
 
-`changeset` 会检查当前工作区中所有包的版本是否已经被发布过，如果没有则自动发布。`<br />`![image.png](./1697953247066-12.png)
+`changeset` 会检查当前工作区中所有包的版本是否已经被发布过，如果没有则自动发布。
+![image.png](./1697953247066-12.png)
 
 > 参考文章：
 >
