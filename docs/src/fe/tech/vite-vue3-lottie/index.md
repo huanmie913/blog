@@ -89,7 +89,8 @@ lottie本身有完善的缓存机制，但如果为了极端情况下，可以�
 ```javascript
 // vite.config.js
 import fs from 'fs';
-import path from 'path';
+import { fileURLToPath } from 'url';
+import { dirname, resolve } from 'path';
 
 export default {
   plugins: [
@@ -97,7 +98,9 @@ export default {
       name: 'update-lottie-json',
       apply: 'build',
       buildStart() {
-        const dataJsonPath = path.resolve(__dirname, 'public/lottie/rocket/data.json')
+        const __filename = fileURLToPath(import.meta.url);
+        const __dirname = dirname(__filename);
+        const dataJsonPath = resolve(__dirname, 'public/lottie/rocket/data.json')
         const data = JSON.parse(fs.readFileSync(dataJsonPath, 'utf-8'))
 
         // 获取当前时间戳
