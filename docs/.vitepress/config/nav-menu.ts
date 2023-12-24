@@ -76,7 +76,6 @@ export const sidebar: DefaultTheme.Sidebar = {
         { text: '使用unocss时适配不同的设计稿', link: '/fe/tech/unocss-rem2px2vw/index.md' },
         { text: 'lottie的配置和发布', link: '/fe/tech/vite-vue3-lottie/index.md' },
         { text: 'String.raw的使用及场景', link: '/fe/tech/string.raw/String.raw.md' },
-        { text: '线上环境代理到开发环境', link: '/fe/project/debug/proxy-online-to-local/index.md' },
       ],
     },
     {
@@ -85,6 +84,7 @@ export const sidebar: DefaultTheme.Sidebar = {
         {
           text: '代理/调试/抓包',
           items: [
+            {text: '线上环境代理到开发环境', link: '/fe/project/debug/proxy-online-to-local/index.md' },
             {text: '调试android设备H5', link: '/fe/project/debug/debug-android-from-computer-h5/index.md'},
             {text: '调试ios设备H5', link: '/fe/project/debug/debug-ios-from-computer-h5/index.md'}
           ]
