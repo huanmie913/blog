@@ -73,8 +73,10 @@ export const sidebar: DefaultTheme.Sidebar = {
           ],
         },
         { text: 'chatGPT之event-source', link: '/fe/tech/event-source/index.md' },
-        { text: '使用unocss时，老项目迁移适配方法rem2px2vw', link: '/fe/tech/unocss-rem2px2vw/index.md' },
-        { text: '基于vite5、vue3、CDN实现lottie的配置和发布', link: '/fe/tech/vite-vue3-lottie/index.md' },
+        { text: '使用unocss时适配不同的设计稿', link: '/fe/tech/unocss-rem2px2vw/index.md' },
+        { text: 'lottie的配置和发布', link: '/fe/tech/vite-vue3-lottie/index.md' },
+        { text: 'String.raw的使用及场景', link: '/fe/tech/string.raw/String.raw.md' },
+        { text: '线上环境代理到开发环境', link: '/fe/project/debug/proxy-online-to-local/index.md' },
       ],
     },
     {
