@@ -92,7 +92,7 @@ export const sidebar: DefaultTheme.Sidebar = {
         {
           text: 'Git',
           items: [
-            {text: 'git config', link: '/fe/project/git-config/index.md'},
+            {text: 'git config配置多用户场景', link: '/fe/project/git-config/index.md'},
             {text: '同一项目使用多个远程仓库', link: '/fe/project/git-more-remote/index.md'}
           ]
         },
