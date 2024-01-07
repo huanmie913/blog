@@ -93,6 +93,12 @@ Notion 风格的开源 Web 笔记本，集成了 AI 自动补全（需要 OpenAI
 
 ![img](https://cdn.beekka.com/blogimg/asset/202311/bg2023110714.webp)
 
+### 框架
+
+#### [gin-vue-admin](https://www.gin-vue-admin.com/)
+使用gin+vue进行急速开发的全栈开发基础平台(基础语言：后端/Go，前端/Javascript)
+
+
 ### 其他
 
 #### [IconGo](https://icongo.github.io/)

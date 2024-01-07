@@ -25,7 +25,7 @@ export const nav: DefaultTheme.NavItem[] = [
     items: [
       { text: '时间、时区', link: '/subject/date-time-zone/index.md' },
       { text: '正则表达式', link: '/subject/regexp/index.md' },
-      { text: '工具收集', link: '/subject/tools/index/index.md' },
+      { text: '工具集', link: '/subject/tools/index/index.md' },
     ]
   },
   {
