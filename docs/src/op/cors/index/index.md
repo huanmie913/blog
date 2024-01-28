@@ -2,9 +2,9 @@
 title: 跨域详解&CORS
 date: 2023-10-20
 tags:
-  - 跨域
+ - 跨域
 categories:
-  - 运维|网络
+ - 运维|网络
 ---
 # 跨域详解&CORS
 
