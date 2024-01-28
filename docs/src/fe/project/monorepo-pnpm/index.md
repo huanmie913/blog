@@ -216,7 +216,7 @@ pnpm run watch 对应在项目根目录的 package.json 中 watch 脚本：
 
 `workspace` 中的包版本管理是一个复杂的任务，`Changesets`是 `pnpm` 官网推荐的工具
 
-> - pnpm官网推荐的 `Changesets` `github`地址为**：**[https://github.com/changesets/changesets](https://github.com/changesets/changesets)
+> - pnpm官网推荐的 `Changesets` `github`地址为：[https://github.com/changesets/changesets](https://github.com/changesets/changesets)
 > - pnpm官网changesets文档：[https://pnpm.io/zh/using-changesets](https://pnpm.io/zh/using-changesets)
 
 ### 安装和初始化 changesets

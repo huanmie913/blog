@@ -7,8 +7,9 @@ export const nav: DefaultTheme.NavItem[] = [
   {
     text: '前端',
     items: [
-      { text: '前端技术', link: '/fe/ts/hello/index.md' },
+      { text: '前端技术', link: '/fe/tech/string.raw/String.raw.md'},
       { text: '工程化', link: '/fe/project/monorepo-pnpm/index.md' },
+      { text: 'TypeScript', link: '/fe/ts/hello/index.md' },
     ]
   },
   /*
@@ -60,25 +61,33 @@ export const sidebar: DefaultTheme.Sidebar = {
       ]
     }
   ],
-  '/fe': [
+  '/fe/ts': [
     {
-      text: '前端技术',
+      text: 'TypeScript入门总结', 
       items: [
-        { 
-          text: 'TypeScript入门总结', 
-          items: [
-            { text: '入门（一）', link: '/fe/ts/hello/index.md' },
-            { text: '入门（二）', link: '/fe/ts/hello/index2.md' },
-            { text: '入门（三）', link: '/fe/ts/hello/index3.md' },
-            { text: 'd.ts描述文件', link: '/fe/ts/hello/d.ts.md' },
-          ],
-        },
-        { text: 'chatGPT之event-source', link: '/fe/tech/event-source/index.md' },
-        { text: '使用unocss时适配不同的设计稿', link: '/fe/tech/unocss-rem2px2vw/index.md' },
-        { text: 'lottie的配置和发布', link: '/fe/tech/vite-vue3-lottie/index.md' },
-        { text: 'String.raw的使用及场景', link: '/fe/tech/string.raw/String.raw.md' },
+        { text: '入门（一）', link: '/fe/ts/hello/index.md' },
+        { text: '入门（二）', link: '/fe/ts/hello/index2.md' },
+        { text: '入门（三）', link: '/fe/ts/hello/index3.md' },
+        { text: 'd.ts描述文件', link: '/fe/ts/hello/d.ts.md' },
       ],
-    },
+    }],
+    'fe/tech':[
+      {
+        text: '前端技术',
+        items: [
+          { 
+            text: 'unocss', 
+            items: [
+              { text: 'unocss适配多规格设计稿', link: '/fe/tech/unocss-rem2px2vw/index.md' },
+              { text: 'unocss的浏览器兼容', link: '/fe/tech/unocss-toplevel-await/index.md' },
+            ],
+          },
+          { text: 'chatGPT之event-source', link: '/fe/tech/event-source/index.md' },
+          { text: 'lottie的配置和发布', link: '/fe/tech/vite-vue3-lottie/index.md' },
+          { text: 'String.raw的使用及场景', link: '/fe/tech/string.raw/String.raw.md' },
+        ],
+      }],
+  '/fe/project': [
     {
       text: '工程化',
       items: [
@@ -95,6 +104,12 @@ export const sidebar: DefaultTheme.Sidebar = {
           items: [
             {text: 'git config配置多用户场景', link: '/fe/project/git-config/index.md'},
             {text: '同一项目使用多个远程仓库', link: '/fe/project/git-more-remote/index.md'}
+          ]
+        },
+        {
+          text: 'Npm',
+          items: [
+            {text: 'registry优先级、镜像源', link: '/fe/project/npm/npm-config-registry-npmrc/index.md'}
           ]
         },
         {text: 'monorepo-pnpm', link: '/fe/project/monorepo-pnpm/index.md'},
