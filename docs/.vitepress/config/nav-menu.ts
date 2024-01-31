@@ -37,6 +37,12 @@ export const nav: DefaultTheme.NavItem[] = [
       { text: '言论', link: '/life/speech/index.md' },
     ]
   },
+  {
+    text: '读书/听书',
+    items: [
+      {text: '自我提升', link: '/books/self-improvement/time-poor/index.md'}
+    ]
+  },
   { 
     text: '归档', 
     items: [
@@ -157,4 +163,12 @@ export const sidebar: DefaultTheme.Sidebar = {
       ],
     },
   ],
+  '/books/self-improvement': [
+    {
+      text: '自我提升',
+      items: [
+        { text: '时间贫穷', link: '/books/self-improvement/time-poor/index.md' },
+      ]
+    }
+  ]
 };
