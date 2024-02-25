@@ -22,23 +22,33 @@ categories:
 
 一个 JS/TS 的服务器运行环境，兼容 Node.js 的所有 API，完全是从头实现的，运行速度大大快于 Node.js。
 
-![img](https://cdn.beekka.com/blogimg/asset/202207/bg2022070604.webp)
+![img](./1708878686382-0.png)
 
 #### [LazyVim](https://www.lazyvim.org/)
 
 neovim 的一套配置文件，让其快速变成一个 IDE
 
-![img](https://cdn.beekka.com/blogimg/asset/202307/bg2023071705.webp)
+![img](./1708878686382-1.png)
 
 #### [CodeGeeX](https://keg.cs.tsinghua.edu.cn/codegeex/index_zh.html)
 
-![](https://cdn.beekka.com/blogimg/asset/202211/bg2022111006.webp)
+![](./1708878686382-2.png)
 
 一个国产的代码生成的人工智能工具，跟 GitHub Copilot 类似，可以将一种语言的代码翻译成另一种，并提供 VS Code 插件。
 
 #### [FlinClip SDK](https://www.finclip.com/ "官网")
 
 FinClip 提供一套 SDK，不仅支持手机（iPhone、Android），还支持桌面（Windows、Linux、macOS）、手表、车机等各种平台。你的 App 只要加载了这套 SDK，就能直接运行微信小程序（以及小游戏），一行代码也不用修改。
+
+#### [SirTunnel](https://github.com/anderspitman/SirTunnel)
+
+一个开源软件，只需要50行代码，就能建立一条隧道，将你的内网电脑可以被公网访问，这里有一篇[教程](https://eighty-twenty.org/2023/01/27/sirtunnel-personal-ngrok)。
+
+#### 安全：[browserscan.net](https://www.browserscan.net/)
+
+![](./1708878875643-0.png)
+
+该网站检测浏览器指纹、IP 地址、WebRTC 泄露，DNS 泄露等信息。
 
 ### Windows
 
@@ -47,13 +57,11 @@ FinClip 提供一套 SDK，不仅支持手机（iPhone、Android），还支持�
 一个免费的 Windows 卸载程序**
 号称可以准确、完整地卸载各种 Windows 软件，残留最少。参见[作者自述](https://jv16powertools.com/blog/comparing-windows-uninstallers-and-making-uninstalr/) ![img](./1697956101213-2.png)
 
-
 #### [DevToys](https://devtoys.app/)
 
 一款 Windows 的小工具集合，收入了开发者会用到的许多小工具。
 
-![img](https://cdn.beekka.com/blogimg/asset/202310/bg2023100805.webp)
-
+![img](./1708878686382-3.png)
 
 ### AI相关
 
@@ -67,7 +75,7 @@ FinClip 提供一套 SDK，不仅支持手机（iPhone、Android），还支持�
 
 Notion 风格的开源 Web 笔记本，集成了 AI 自动补全（需要 OpenAI Key）。
 
-![img](https://cdn.beekka.com/blogimg/asset/202310/bg2023101004.webp)
+![img](./1708878686382-4.png)
 
 ### AI/图像/图片.处理
 
@@ -79,11 +87,17 @@ Notion 风格的开源 Web 笔记本，集成了 AI 自动补全（需要 OpenAI
 
 一个开源软件，可以将图片从低分辨率变成高分辨率，变得更清晰。
 
-![img](https://cdn.beekka.com/blogimg/asset/202208/bg2022082909.webp)
+![img](./1708878686382-5.png)
 
 #### [Lama Cleaner](https://github.com/Sanster/lama-cleaner)
 
 一个开源的 AI 工具，可以从图片上擦除任何不需要的物体。
+
+#### [background-erase.xyz](https://background-erase.xyz/)
+
+![img](./1708878686382-6.png)
+
+去除图片背景的免费网站，使用最新的删除图片背景的 AI 模型 RMBG-v1.4，所有计算都在本地完成，不用上传图片。
 
 ### React
 
@@ -91,13 +105,13 @@ Notion 风格的开源 Web 笔记本，集成了 AI 自动补全（需要 OpenAI
 
 一个开源的 React 练习场（playground）
 
-![img](https://cdn.beekka.com/blogimg/asset/202311/bg2023110714.webp)
+![img](./1708878686382-7.png)
 
 ### 框架
 
 #### [gin-vue-admin](https://www.gin-vue-admin.com/)
-使用gin+vue进行急速开发的全栈开发基础平台(基础语言：后端/Go，前端/Javascript)
 
+使用gin+vue进行急速开发的全栈开发基础平台(基础语言：后端/Go，前端/Javascript)
 
 ### 其他
 
@@ -105,12 +119,10 @@ Notion 风格的开源 Web 笔记本，集成了 AI 自动补全（需要 OpenAI
 
 开源的图标搜索引擎
 
-![img](https://cdn.beekka.com/blogimg/asset/202211/bg2022111007.webp)
-
-
+![img](./1708878686382-8.png)
 
 #### [Dexie.js](https://github.com/dexie/Dexie.js)
 
 浏览器原生数据库 IndexedDB 的包装库，提供易于操作的 API。
 
-![img](https://cdn.beekka.com/blogimg/asset/202308/bg2023080901.webp)
+![img](./1708878686382-9.png)

@@ -137,6 +137,17 @@ export const examples: Example[] = [
         ]
       },
       {
+        name: 'SVG',
+        desc: 'SVG教程(英)',
+        icon: 'i-tabler-svg dark:invert',
+        links: [
+          {
+            channel: 'SVG Tutorial官网',
+            url: 'https://svg-tutorial.com/',
+          }
+        ]
+      },
+      {
         name: 'hello-algo',
         desc: 'Hello-algo算法图解',
         icon: 'inject',
