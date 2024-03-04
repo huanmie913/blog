@@ -95,9 +95,17 @@ Notion 风格的开源 Web 笔记本，集成了 AI 自动补全（需要 OpenAI
 
 #### [background-erase.xyz](https://background-erase.xyz/)
 
+去除图片背景的免费网站，使用最新的删除图片背景的 AI 模型 RMBG-v1.4，所有计算都在本地完成，不用上传图片。
+
 ![img](./1708878686382-6.png)
 
-去除图片背景的免费网站，使用最新的删除图片背景的 AI 模型 RMBG-v1.4，所有计算都在本地完成，不用上传图片。
+### TypeScript
+
+#### [TSDiagram](https://tsdiagram.com/)
+
+一个在线工具，让你用 TypeScript 写类型关系，自动生成图表。
+
+![img](./1709524215757-0.png)
 
 ### React
 

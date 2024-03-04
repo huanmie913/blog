@@ -35,6 +35,7 @@ export const nav: DefaultTheme.NavItem[] = [
     items: [
       { text: '健康/保险', link: '/life/healthy/insurance-submit-expense/index.md' },
       { text: '言论', link: '/life/speech/index.md' },
+      { text: '乐享生活', link: '/life/enjoy-life/index/index.md'}
     ]
   },
   {
