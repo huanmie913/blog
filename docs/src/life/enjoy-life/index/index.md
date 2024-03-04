@@ -15,7 +15,7 @@ categories:
 
 **可以安装在安卓版本的电视上**
 
-### 我的电视：
+### 我的电视
 
 **地址：**[链接](https://github.com/lizongying/my-tv)
 

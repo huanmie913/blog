@@ -89,6 +89,9 @@ export const sidebar: DefaultTheme.Sidebar = {
               { text: 'unocss的浏览器兼容', link: '/fe/tech/unocss-toplevel-await/index.md' },
             ],
           },
+          {
+            text: 'CSS兼容之rgb', link: '/fe/tech/css-rgb/index.md'
+          },
           { text: 'chatGPT之event-source', link: '/fe/tech/event-source/index.md' },
           { text: 'lottie的配置和发布', link: '/fe/tech/vite-vue3-lottie/index.md' },
           { text: 'String.raw的使用及场景', link: '/fe/tech/string.raw/String.raw.md' },
