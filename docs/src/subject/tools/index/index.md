@@ -81,7 +81,7 @@ Notion 风格的开源 Web 笔记本，集成了 AI 自动补全（需要 OpenAI
 
 #### [**Fooocus**](https://github.com/lllyasviel/Fooocus)
 
-一个桌面应用，可以在离线条件下，通过文本生成图片**![img](./1697956101213-3.png)
+一个桌面应用，可以在离线条件下，通过文本生成图片![img](./1697956101213-3.png)
 
 #### [Upscayl](https://github.com/upscayl/upscayl)
 
@@ -98,6 +98,28 @@ Notion 风格的开源 Web 笔记本，集成了 AI 自动补全（需要 OpenAI
 去除图片背景的免费网站，使用最新的删除图片背景的 AI 模型 RMBG-v1.4，所有计算都在本地完成，不用上传图片。
 
 ![img](./1708878686382-6.png)
+
+#### [ImageTools](https://ai-image.tools/home)
+
+AI 一键抠图（去除背景）的在线工具。
+
+![img](./1710214528674-0.png)
+
+#### [Photo Relay](https://github.com/zobor/photo-relay)
+
+一个封面图片制作的在线工具。 [Demo](https://www.duelpeak.com/pages/poster)。
+
+![img](./1710215510263-0.png)
+
+### 音视频相关
+
+#### H5视频增强脚本
+
+* 官网地址：[h5player.anzz.top(opens new window)](https://h5player.anzz.top/)
+* GitHub地址：[github.com/xxxily/h5player(opens new window)](https://github.com/xxxily/h5player)
+* GreasyFork：[greasyfork.org/scripts/381682](https://greasyfork.org/scripts/381682)
+
+![h5player-ui](./1710215142162-0.png)
 
 ### TypeScript
 
@@ -134,3 +156,21 @@ Notion 风格的开源 Web 笔记本，集成了 AI 自动补全（需要 OpenAI
 浏览器原生数据库 IndexedDB 的包装库，提供易于操作的 API。
 
 ![img](./1708878686382-9.png)
+
+#### [Earthly](https://earthly.dev/)
+
+一个开源的 CI/CD 框架，可以在本地架设自动构建服务。
+
+![img](./1710215362872-0.png)
+
+#### [opfs-tools](https://github.com/hughfenghen/opfs-tools)
+
+浏览器私有文件系统 OPFS API 的一个封装库，提供更简单好用的 API。
+
+OPFS（Origin Private File System）API是一个设计用于浏览器环境的Web API，它允许网页访问一个沙盒文件系统，用来存储用户数据。这个API是在浏览器中实现的，目的是为了在客户端提供一个更安全和私有的方式来处理文件数据。
+
+Node.js是一个服务器端的JavaScript运行环境，有自己的一套文件系统API，即 `fs`模块。`fs`模块提供了丰富的文件操作API，允许Node.js应用读取、写入、修改文件系统中的文件。
+
+因此，OPFS API并不直接适用于Node.js环境。Node.js的 `fs`模块是专门为服务器端设计的，而OPFS是为运行在浏览器中的Web应用设计的。
+
+如果需要在Node.js中处理文件，应该使用 `fs`模块或者其他Node.js支持的文件处理库。如果你需要在浏览器中处理文件，并希望使用OPFS API，需要确保代码是在支持该API的浏览器中执行。

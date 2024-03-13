@@ -122,6 +122,7 @@ export const sidebar: DefaultTheme.Sidebar = {
             {text: 'registry优先级、镜像源', link: '/fe/project/npm/npm-config-registry-npmrc/index.md'}
           ]
         },
+        {text: 'VOLTA', link: '/fe/project/volta/index.md'},
         {text: 'monorepo-pnpm', link: '/fe/project/monorepo-pnpm/index.md'},
         {text: 'polyfills、transpilers', link: '/fe/project/polyfills-transpilers-vite-compatibility/index.md'},
       ]

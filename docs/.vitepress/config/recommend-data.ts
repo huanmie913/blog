@@ -286,6 +286,23 @@ export const examples: Example[] = [
         ]
       },
       {
+        name: 'OpenMoji',
+        desc: '各种开源的 Emoji',
+        icon: 'inject',
+        links: [
+          {
+            channel: '官网',
+            url: 'https://openmoji.org/',
+            icon: 'i-mdi-web',
+          },
+          {
+            channel: 'github',
+            icon: 'i-logos-github-icon dark:invert',
+            url: 'https://github.com/hfg-gmuend/openmoji'
+          }
+        ]
+      },
+      {
         name: 'vditor',
         desc: 'Markdown编辑器',
         icon: 'inject',
@@ -347,6 +364,28 @@ export const examples: Example[] = [
   {
     title: '效率工具',
     children: [
+      {
+        name: 'VOLTA',
+        desc: 'Node版本管理工具',
+        icon: 'i-noto-high-voltage dark:invert',
+        links: [
+          {
+            url: 'https://volta.sh/',
+            icon: 'i-noto-high-voltage dark:invert',
+            channel: '官网',
+          },
+          {
+            url: 'https://docs.volta.sh/guide/',
+            icon: 'i-simple-line-icons-docs dark:invert',
+            channel: '官.文档',
+          },
+          {
+            url: '/fe/project/volta/',
+            icon: 'i-simple-line-icons-docs dark:invert',
+            channel: '本.文档',
+          }
+        ]
+      },
       {
         name: 'Warp',
         desc: '现代终端，支持AI机器人',
@@ -444,6 +483,23 @@ export const examples: Example[] = [
             channel: '插件',
             url: 'https://marketplace.visualstudio.com/items?itemName=hediet.vscode-drawio',
             icon: 'i-devicon-vscode dark:invert',
+          }
+        ]
+      },
+      {
+        name: 'Docker Compose',
+        desc: '常用的 Docker Compose 配置文件',
+        icon: 'i-skill-icons-docker',
+        links: [
+          {
+            channel: '官网',
+            url: 'https://haxxnet.github.io/Compose-Examples/',
+            icon: 'i-mdi-web',
+          },
+          {
+            channel: 'github',
+            icon: 'i-logos-github-icon dark:invert',
+            url: 'https://github.com/Haxxnet/Compose-Examples'
           }
         ]
       }
