@@ -82,15 +82,20 @@ export const sidebar: DefaultTheme.Sidebar = {
       {
         text: '前端技术',
         items: [
+          {
+            text: 'CSS', 
+            items: [
+              { text: 'CSS兼容之rgb', link: '/fe/tech/css/css-rgb/index.md' },
+              { text: 'CSS宽度相关性', link: '/fe/tech/css/css-width/index.md' },
+              { text: '属性值auto的计算', link: '/fe/tech/css/css-auto/index.md' },
+            ],
+          },
           { 
             text: 'unocss', 
             items: [
               { text: 'unocss适配多规格设计稿', link: '/fe/tech/unocss-rem2px2vw/index.md' },
               { text: 'unocss的浏览器兼容', link: '/fe/tech/unocss-toplevel-await/index.md' },
             ],
-          },
-          {
-            text: 'CSS兼容之rgb', link: '/fe/tech/css-rgb/index.md'
           },
           { text: 'chatGPT之event-source', link: '/fe/tech/event-source/index.md' },
           { text: 'lottie的配置和发布', link: '/fe/tech/vite-vue3-lottie/index.md' },

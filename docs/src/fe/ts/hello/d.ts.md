@@ -42,11 +42,11 @@ categories:
 }
 ```
 
-原因：`<br />`vite build 命令生成的构建会重新覆盖原有的目录，如果在 tsc 命令后执行，则生成的 .d.ts 文件会被覆盖`<br />`tsc 在构建过程的作用是类型检测，[vite 可以直接将 Typescript 转译到 Javascript](https://cn.vitejs.dev/guide/features.html#typescript)`<br />`![](./1698215448674-0.png)`<br />`Q: tsc 命令置后执行，会不会在构建完成后遗漏了类型检测？`<br />`A: 不会，即使 build 完成后，执行 tsc 遇到错误的编码，也会在终端报错从而退出命令的执行。
+原因：`<br />`vite build 命令生成的构建会重新覆盖原有的目录，如果在 tsc 命令后执行，则生成的 .d.ts 文件会被覆盖 `<br />`tsc 在构建过程的作用是类型检测，[vite 可以直接将 Typescript 转译到 Javascript](https://cn.vitejs.dev/guide/features.html#typescript) `<br />`![](./1698215448674-0.png)`<br />`Q: tsc 命令置后执行，会不会在构建完成后遗漏了类型检测？`<br />`A: 不会，即使 build 完成后，执行 tsc 遇到错误的编码，也会在终端报错从而退出命令的执行。
 
 ### 使用tsup
 
-**TSUP**是一个用于构建TypeScript库的工具，它可以自动生成**.d.ts**文件，并支持自定义输出文件名和位置。在使用**TSUP**生成**.d.ts**文件时，需要在**tsup.config.json**配置文件中指定**dts**选项，例如：
+**TSUP**是一个用于构建TypeScript库的工具，它可以自动生成 `.d.ts`**文件，并支持自定义输出文件名和位置。在使用**TSUP**生成**.d.ts**文件时，需要在**tsup.config.json配置文件中指定 `dts`选项，例如：
 
 ```json
 {
