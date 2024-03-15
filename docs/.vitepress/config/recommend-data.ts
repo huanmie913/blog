@@ -131,8 +131,8 @@ export const examples: Example[] = [
         icon: 'i-logos-css-3 dark:invert',
         links: [
           {
-            channel: 'doyoe',
-            url: 'https://css.doyoe.com/',
+            channel: '手册',
+            url: 'https://css.gengxiaofei.com/',
           }
         ]
       },
