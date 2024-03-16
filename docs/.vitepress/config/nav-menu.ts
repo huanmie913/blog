@@ -106,6 +106,9 @@ export const sidebar: DefaultTheme.Sidebar = {
     {
       text: '工程化',
       items: [
+        {text: 'VOLTA', link: '/fe/project/volta/index.md'},
+        {text: 'monorepo-pnpm', link: '/fe/project/monorepo-pnpm/index.md'},
+        {text: 'polyfills、transpilers', link: '/fe/project/polyfills-transpilers-vite-compatibility/index.md'},
         {
           text: '代理/调试/抓包',
           items: [
@@ -127,9 +130,15 @@ export const sidebar: DefaultTheme.Sidebar = {
             {text: 'registry优先级、镜像源', link: '/fe/project/npm/npm-config-registry-npmrc/index.md'}
           ]
         },
-        {text: 'VOLTA', link: '/fe/project/volta/index.md'},
-        {text: 'monorepo-pnpm', link: '/fe/project/monorepo-pnpm/index.md'},
-        {text: 'polyfills、transpilers', link: '/fe/project/polyfills-transpilers-vite-compatibility/index.md'},
+        {
+          text: 'Chrome设置',
+          items: [
+            { text: 'chrome://常用地址', link: '/fe/project/chrome/chrome-addr/index.md' },
+            { text: '设置音频自动播放的方法', link: '/fe/project/chrome/chrome-audio-auto-play/index.md' },
+            { text: '允许手动设置Cookie的方法', link: '/fe/project/chrome/chrome-cookie-set-by-hand/index.md' },
+            { text: '强制清除缓存的方法', link: '/fe/project/chrome/chrome-force-clear-cache/index.md' },
+          ]
+        }
       ]
     }
   ],
