@@ -57,8 +57,48 @@ export const examples: Example[] = [
         ]
       },
       {
+        name: 'html/css',
+        desc: 'Html和CSS教程(英)',
+        icon: 'inject',
+        logo: 'html-css.png',
+        links: [
+          {
+            url: 'https://internetingishard.netlify.app/html-and-css/',
+            channel: '官网',
+          }
+        ]
+      },
+      {
         name: 'JavaScript',
-        desc: 'JavaScript教程及手册',
+        desc: '你不知道的Javascript',
+        icon: 'i-logos-javascript dark:invert',
+        links: [
+          {
+            url: 'https://zh-cn-ydk.js.org/',
+            channel: '官网.电子版',
+          },
+          {
+            channel: 'github',
+            icon: 'i-logos-github-icon dark:invert',
+            url: 'https://github.com/liunnn1994/You-Dont-Know-JS-zh-CN',
+          }
+        ]
+      },
+      {
+        name: 'JavaScript',
+        desc: '现代 JavaScript 教程',
+        icon: 'i-logos-javascript dark:invert',
+        links: [
+          {
+            channel: 'javascript.info',
+            icon: 'i-mdi-web',
+            url: 'https://zh.javascript.info/',
+          }
+        ]
+      },
+      {
+        name: 'JavaScript',
+        desc: 'ES6教程(阮一峰)',
         icon: 'i-logos-javascript dark:invert',
         links: [
           {
@@ -66,10 +106,9 @@ export const examples: Example[] = [
             channel: '网道'
           },
           {
-            channel: 'javascript.info',
-            icon: 'i-mdi-web',
-            url: 'https://zh.javascript.info/',
-          }
+            url: 'https://es6.ruanyifeng.com/',
+            channel: '官网'
+          },
         ]
       },
       {
@@ -93,18 +132,7 @@ export const examples: Example[] = [
           }
         ]
       },
-      {
-        name: 'html/css',
-        desc: 'Html和CSS教程(英)',
-        icon: 'inject',
-        logo: 'html-css.png',
-        links: [
-          {
-            url: 'https://internetingishard.netlify.app/html-and-css/',
-            channel: '官网',
-          }
-        ]
-      },
+
       {
         name: 'NodeJS',
         desc: 'NodeJs相关文档',
