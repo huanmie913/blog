@@ -69,8 +69,8 @@ export const examples: Example[] = [
         ]
       },
       {
-        name: 'JavaScript',
-        desc: '你不知道的Javascript',
+        name: '你不知道的Javascript(第二版)',
+        desc: 'JavaScript电子书',
         icon: 'i-logos-javascript dark:invert',
         links: [
           {
@@ -85,8 +85,8 @@ export const examples: Example[] = [
         ]
       },
       {
-        name: 'JavaScript',
-        desc: '现代 JavaScript 教程',
+        name: '现代 JavaScript 教程',
+        desc: 'JavaScript电子书',
         icon: 'i-logos-javascript dark:invert',
         links: [
           {
@@ -97,8 +97,8 @@ export const examples: Example[] = [
         ]
       },
       {
-        name: 'JavaScript',
-        desc: 'ES6教程(阮一峰)',
+        name: 'ES6教程(阮一峰)',
+        desc: 'JavaScript',
         icon: 'i-logos-javascript dark:invert',
         links: [
           {
@@ -344,6 +344,23 @@ export const examples: Example[] = [
             channel: 'github',
             icon: 'i-logos-github-icon dark:invert',
             url: 'https://github.com/Vanessa219/vditor'
+          }
+        ]
+      },
+      {
+        name: 'wangEditor',
+        desc: '富文本编辑器',
+        icon: 'inject',
+        links: [
+          {
+            channel: '官网',
+            url: 'https://www.wangeditor.com/',
+            icon: 'i-mdi-web',
+          },
+          {
+            channel: 'github',
+            icon: 'i-logos-github-icon dark:invert',
+            url: 'https://github.com/wangeditor-team/wangEditor'
           }
         ]
       },
