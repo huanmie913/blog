@@ -174,3 +174,32 @@ Node.js是一个服务器端的JavaScript运行环境，有自己的一套文件
 因此，OPFS API并不直接适用于Node.js环境。Node.js的 `fs`模块是专门为服务器端设计的，而OPFS是为运行在浏览器中的Web应用设计的。
 
 如果需要在Node.js中处理文件，应该使用 `fs`模块或者其他Node.js支持的文件处理库。如果你需要在浏览器中处理文件，并希望使用OPFS API，需要确保代码是在支持该API的浏览器中执行。
+
+#### 开箱即用的 Obsidian / Typora 简历
+
+
+#### [TypeScript 互动教程](https://www.learn-ts.org/)
+
+通过一个个小练习，讲授 TypeScript 语法
+
+![](./1710694205698-0.png)
+
+
+#### [Earthworm](https://github.com/cuixueshe/earthworm)
+
+一个开源的 Web 程序，通过连词造句的方式，经过不断重复练习英语，[线上体验](https://earthworm.cuixueshe.com/)。
+
+![img](./1710694205698-1.png)
+
+#### [git-diff-view](https://github.com/MrWangJustToDo/git-diff-view)
+
+一个 React/Vue 组件，用来显示 git diff 的结果，类似于 GitHub 的样式。
+
+![](./1710694205698-2.png)
+
+
+#### [LapisCV](https://github.com/BingyanStudio/LapisCV)
+
+基于 Obsidian / Typora 编辑器的 Markdown 简历模板，可以导出 PDF 文件
+
+![img](./1710694205698-3.png)
