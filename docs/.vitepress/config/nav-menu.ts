@@ -136,6 +136,7 @@ export const sidebar: DefaultTheme.Sidebar = {
             { text: 'chrome://常用地址', link: '/fe/project/chrome/chrome-addr/index.md' },
             { text: '设置音频自动播放的方法', link: '/fe/project/chrome/chrome-audio-auto-play/index.md' },
             { text: '允许手动设置Cookie的方法', link: '/fe/project/chrome/chrome-cookie-set-by-hand/index.md' },
+            { text: '无痕模式使用Cookie的方法', link: '/fe/project/chrome/chrome-safe-mode-cookie/index.md' },
             { text: '强制清除缓存的方法', link: '/fe/project/chrome/chrome-force-clear-cache/index.md' },
           ]
         }

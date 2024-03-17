@@ -2,12 +2,12 @@
 title: VOLTA之node、npm、pnpm版本管理
 date: 2024-03-13
 tags:
-	- 版本
-  - node
-  - pnpm
+ - 版本
+ - node
+ - pnpm
 categories:
-	- 工程化
-  - 前端
+ - 工程化
+ - 前端
 ---
 # VOLTA之node、npm、pnpm版本管理
 

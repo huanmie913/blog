@@ -2,12 +2,12 @@
 title: HTML实体字符/ISO Latin-1字符集
 date: 2024-01-12
 tags:
-	- html
-  - 实体
-  - 特殊符号
+ - html
+ - 实体
+ - 特殊符号
 categories:
-	- 技术专题
-  - 前端
+ - 技术专题
+ - 前端
 ---
 # HTML实体字符/ISO Latin-1字符集
 
