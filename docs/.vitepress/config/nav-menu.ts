@@ -41,7 +41,8 @@ export const nav: DefaultTheme.NavItem[] = [
   {
     text: '读书/听书',
     items: [
-      {text: '自我提升', link: '/books/self-improvement/time-poor/index.md'}
+      { text: '自我提升', link: '/books/self-improvement/time-poor/index.md' },
+      { text: '健康', link: '/books/brain-gym/index.md' },
     ]
   },
   { 
@@ -183,12 +184,18 @@ export const sidebar: DefaultTheme.Sidebar = {
       ],
     },
   ],
-  '/books/self-improvement': [
+  '/books': [
     {
       text: '自我提升',
       items: [
         { text: '时间贫穷', link: '/books/self-improvement/time-poor/index.md' },
       ]
-    }
+    },
+    {
+      text: '健康',
+      items: [
+        { text: '大脑健身房', link: '/books/brain-gym/index.md' },
+      ]
+    },
   ]
 };
