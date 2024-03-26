@@ -69,6 +69,15 @@ export const sidebar: DefaultTheme.Sidebar = {
       ]
     }
   ],
+  '/life/enjoy-life': [
+    {
+      text: '乐享生活',
+      items: [
+        { text: '出游清单', link: '/life/enjoy-life/list/index.md' },
+        { text: '生活小窍门', link: '/life/enjoy-life/index/index.md' },
+      ]
+    }
+  ],
   '/fe/ts': [
     {
       text: 'TypeScript入门总结', 
