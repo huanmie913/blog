@@ -165,6 +165,23 @@ export const examples: Example[] = [
         ]
       },
       {
+        name: 'Flexbox-Froggy',
+        desc: '在游戏中学习flex布局',
+        icon: 'inject',
+        links: [
+          {
+            channel: '官网',
+            icon: 'i-mdi-web',
+            url: 'https://flexboxfroggy.com/#zh-cn',
+          },
+          {
+            channel: 'github',
+            icon: 'i-logos-github-icon dark:invert',
+            url: 'https://github.com/thomaspark/flexboxfroggy/'
+          }
+        ]
+      },
+      {
         name: 'SVG',
         desc: 'SVG教程(英)',
         icon: 'i-tabler-svg dark:invert',
@@ -230,6 +247,18 @@ export const examples: Example[] = [
           {
             channel: '官网',
             url: 'https://httptoolkit.tech/will-it-cors/',
+            icon: 'i-mdi-web',
+          }
+        ]
+      },
+      {
+        name: 'AI神器大全',
+        icon: 'i-eos-icons-ai dark:invert',
+        desc: 'AI神器大全-网址导航',
+        links: [
+          {
+            channel: '官网',
+            url: 'https://aishenqi.net/',
             icon: 'i-mdi-web',
           }
         ]
@@ -400,6 +429,28 @@ export const examples: Example[] = [
             channel: 'github',
             icon: 'i-logos-github-icon dark:invert',
             url: 'https://github.com/francoischalifour/medium-zoom'
+          }
+        ]
+      },
+      {
+        name: 'typed.js',
+        desc: '打字机效果的js库',
+        icon: 'i-file-icons-typedoc dark:invert',
+        links: [
+          {
+            channel: '官网',
+            icon: 'i-mdi-web',
+            url: 'https://mattboldt.com/demos/typed-js/',
+          },
+          {
+            channel: 'github',
+            icon: 'i-logos-github-icon dark:invert',
+            url: 'https://github.com/mattboldt/typed.js/'
+          },
+          {
+            channel: '文档',
+            icon: 'i-simple-line-icons-docs dark:invert',
+            url: 'https://mattboldt.github.io/typed.js/docs/'
           }
         ]
       }
