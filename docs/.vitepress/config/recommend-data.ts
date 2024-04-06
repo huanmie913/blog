@@ -608,7 +608,12 @@ export const examples: Example[] = [
           {
             channel: 'macapp',
             url: 'https://macapp.org.cn/app/proxyman.html'
-          }
+          },
+          {
+            url: '/fe/project/debug/proxy-man/',
+            icon: 'i-simple-line-icons-docs dark:invert',
+            channel: '文档',
+          }            
         ]
       },
       {

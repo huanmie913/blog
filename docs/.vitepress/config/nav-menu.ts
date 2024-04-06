@@ -124,7 +124,8 @@ export const sidebar: DefaultTheme.Sidebar = {
           items: [
             {text: '线上环境代理到开发环境', link: '/fe/project/debug/proxy-online-to-local/index.md' },
             {text: '调试android设备H5', link: '/fe/project/debug/debug-android-from-computer-h5/index.md'},
-            {text: '调试ios设备H5', link: '/fe/project/debug/debug-ios-from-computer-h5/index.md'}
+            {text: '调试ios设备H5', link: '/fe/project/debug/debug-ios-from-computer-h5/index.md'},
+            {text: 'proxyman使用简介', link: '/fe/project/debug/proxy-man/index.md'}
           ]
         },
         {
