@@ -262,6 +262,18 @@ export const examples: Example[] = [
             icon: 'i-mdi-web',
           }
         ]
+      },
+      {
+        name: '动手实战人工智能',
+        icon: 'i-streamline-emojis-robot-face-2 dark:invert',
+        desc: '通过实例介绍一些 AI 算法(中文)',
+        links: [
+          {
+            channel: '官网',
+            url: 'https://aibydoing.com/',
+            icon: 'i-mdi-web',
+          }
+        ]
       }
     ]
   },
@@ -453,12 +465,51 @@ export const examples: Example[] = [
             url: 'https://mattboldt.github.io/typed.js/docs/'
           }
         ]
+      },
+      {
+        name: 'lodash',
+        desc: 'JavaScript 实用工具库',
+        icon: 'i-logos-lodash dark:invert',
+        links: [
+          {
+            channel: '官网',
+            url: 'https://lodash.com/',
+            icon: 'i-mdi-web',
+          },
+          {
+            channel: '中文',
+            url: 'https://www.lodashjs.com/',
+            icon: 'i-ri-emphasis-cn dark:invert',
+          },
+          {
+            channel: 'npm',
+            icon: 'i-logos-npm-icon dark:invert',
+            url: 'https://www.npmjs.com/package/lodash'
+          }
+        ]
+      },
+      {
+        name: 'superjson',
+        desc: '扩展多种类型的 JSON 序列化工具',
+        icon: 'inject',
+        links: [
+          {
+            channel: 'github',
+            icon: 'i-logos-github-icon dark:invert',
+            url: 'https://github.com/blitz-js/superjson'
+          },
+          {
+            channel: 'npm',
+            icon: 'i-logos-npm-icon dark:invert',
+            url: 'https://www.npmjs.com/package/superjson'
+          }
+        ]
       }
     ]
   },
 
   {
-    title: '效率工具',
+    title: '工具',
     children: [
       {
         name: 'VOLTA',
@@ -598,16 +649,10 @@ export const examples: Example[] = [
             url: 'https://github.com/Haxxnet/Compose-Examples'
           }
         ]
-      }
-    ]
-  },
-  // 安全.资源
-  {
-    title: '安全资源',
-    children: [
+      },
       {
         name: '雷池',
-        desc: '简单、好用、强大的免费WAF',
+        desc: '简单、好用、强大的免费WAF(安全工具)',
         logo: 'safe-line.png',
         icon: 'inject',
         links: [
@@ -621,6 +666,23 @@ export const examples: Example[] = [
             icon: 'i-logos-github-icon dark:invert',
             url: 'https://github.com/chaitin/SafeLine'
           }
+        ]
+      }
+    ]
+  },
+  {
+    title: '其他',
+    children: [
+      {
+        name: 'z2h字帖',
+        desc: '中英文字帖在线生成',
+        icon: 'i-twemoji-memo dark:invert',
+        links: [
+          {
+            channel: '官网',
+            icon: 'i-mdi-web',
+            url: 'https://paper.z2h.cn/'
+          },
         ]
       }
     ]
