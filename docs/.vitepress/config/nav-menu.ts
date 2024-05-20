@@ -173,6 +173,8 @@ export const sidebar: DefaultTheme.Sidebar = {
         { 
           text: 'HTTP',
           items: [
+            { text: 'HTTP状态码', link: '/op/http/status/index.md' },
+            { text: 'HTTP协议', link: '/op/http/index/index.md' },
             { text: 'HTTP缓存机制', link: '/op/http/cache/index.md' },
           ]
         },
