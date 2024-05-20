@@ -1,5 +1,5 @@
 import { parseISO, format, formatDistance, setDefaultOptions } from 'date-fns'
-import zhCN from 'date-fns/locale/zh-CN/index';
+import zhCN from 'date-fns/locale/zh-CN';
 
 const formatString = 'yyyy-MM-dd'
 setDefaultOptions({locale: zhCN})
