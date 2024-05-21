@@ -122,6 +122,7 @@ export const sidebar: DefaultTheme.Sidebar = {
         {
           text: '代理/调试/抓包',
           items: [
+            {text: 'chrome之DevTools', link: 'https://developer.chrome.com/docs/devtools?hl=zh-cn'},
             {text: '线上环境代理到开发环境', link: '/fe/project/debug/proxy-online-to-local/index.md' },
             {text: '调试android设备H5', link: '/fe/project/debug/debug-android-from-computer-h5/index.md'},
             {text: '调试ios设备H5', link: '/fe/project/debug/debug-ios-from-computer-h5/index.md'},
