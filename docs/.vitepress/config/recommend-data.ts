@@ -335,6 +335,23 @@ export const examples: Example[] = [
         ]
       },
       {
+        name: 'svgl',
+        desc: '常用徽标 Logo 的搜索引擎',
+        icon: 'inject',
+        logo: 'svgl.svg',
+        links: [
+          {
+            channel: '官网',
+            icon: 'i-mdi-web',
+            url: 'https://www.svgl.app/',
+          },
+          {
+            channel: 'github',
+            icon: 'i-logos-github-icon dark:invert',
+            url: 'https://github.com/pheralb/svgl'
+          }]
+      },
+      {
         name: 'MacOsIconGallery',
         desc: 'MacOS图标库',
         icon: 'i-mdi-apple dark:invert',
