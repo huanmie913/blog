@@ -20,7 +20,7 @@ categories:
 
 一个 URL 的一般形式通常如上所示（`http://test.com/index.html` ），现在最常用的协议就是 `HTTP`，`HTTP` 的默认端口是 `80`，通常可以省略。
 
-![image.png](https://cdn.nlark.com/yuque/0/2021/png/333805/1637153650416-ba879ff5-1f6a-4a86-984a-b0358ee959de.png#averageHue=%23e3e3e3&clientId=u00937084-8775-4&from=paste&id=Ut1dY&originHeight=353&originWidth=224&originalType=url&ratio=1&rotation=0&showTitle=false&size=36659&status=done&style=none&taskId=u41f175a2-77c2-4028-8d19-66502c627ff&title=)
+![image.png](./1716346958202-0.png)
 
 ### 1.1、`HTTP/1.1`
 
@@ -39,7 +39,7 @@ categories:
 
 下图中的 `RTT` 为往返时延（`Round-Trip Time`： 往返时延。表示从发送端发送数据开始，到发送端收到来自接收端的确认，总共经历的时延）。
 
-![image.png](https://cdn.nlark.com/yuque/0/2021/png/333805/1637153650990-7d793d62-4c3f-40fd-b6c9-2feb1efc214b.png#averageHue=%23e8e8e8&clientId=u00937084-8775-4&from=paste&id=NQNIb&originHeight=308&originWidth=489&originalType=url&ratio=1&rotation=0&showTitle=false&size=70474&status=done&style=none&taskId=u49c7b1a5-305f-46d3-879e-9adcbc0414c&title=)
+![image.png](./1716346958202-1.png)
 
 #### 1.1.2、`HTTP` 连接拆除过程
 
@@ -55,7 +55,7 @@ categories:
 3. SYN 标志位，用于连接建立，SYN 为 1 时，表明这是一个请求建立连接报文。
 4. FIN 标志位，用于连接拆除，FIN 为 1 时，表明发送方数据已发送完毕，并要求释放连接。
 
-![image.png](https://cdn.nlark.com/yuque/0/2021/png/333805/1637153651311-d3b422ea-cd29-462c-b203-cfd02665e3e1.png#averageHue=%23d9d9d9&clientId=u00937084-8775-4&from=paste&id=qDCAo&originHeight=515&originWidth=692&originalType=url&ratio=1&rotation=0&showTitle=false&size=191440&status=done&style=none&taskId=u15f92d41-ef86-426a-a2ad-829fe291fc4&title=)
+![image.png](./1716346958202-2.png)
 
 #### 1.1.4、TCP 三次握手建立连接
 
@@ -67,7 +67,7 @@ TCP 标准规定，ACK 报文段可以携带数据，但不携带数据就不用
 
 下图是一个具体的示例：
 
-![image.png](https://cdn.nlark.com/yuque/0/2021/png/333805/1637153650880-8d7e5c09-d692-4d6f-91d7-c96dc3cab91b.png#averageHue=%23b2a780&clientId=u00937084-8775-4&from=paste&id=sQUd2&originHeight=82&originWidth=1612&originalType=url&ratio=1&rotation=0&showTitle=false&size=23283&status=done&style=none&taskId=ufecf5568-4c6f-4b30-b2f5-736874f4bb9&title=)
+![image.png](./1716346958202-3.png)
 （此截图是我使用 Wireshark 抓包工具截取的 TCP 报文段截图）。
 
 #### 1.1.5、TCP 四次挥手拆除连接
@@ -95,7 +95,7 @@ FIN 报文段即使不携带数据，也要消耗序号。
 HTTP 报文由请求行、首部、实体主体组成，它们之间由 CRLF（回车换行符） 分隔开。
 **注意：实体包括首部(也称为实体首部)和实体主体，sp 即是空格 space**。
 
-![image.png](https://cdn.nlark.com/yuque/0/2021/png/333805/1637153651176-4d99f534-a02d-4964-9682-b6b915a55391.png#averageHue=%23efdec5&clientId=u00937084-8775-4&from=paste&id=hDQXN&originHeight=323&originWidth=566&originalType=url&ratio=1&rotation=0&showTitle=false&size=47401&status=done&style=none&taskId=u2f058ed6-d177-4fbb-a721-864e0b8d8cb&title=)
+![image.png](./1716346958202-4.png)
 
 请求行和首部是由 ASCII 文本组成的，实体主体是可选的，可以为空也可以是任意二进制数据。
 请求报文和响应报文的格式基本相同。
@@ -181,7 +181,7 @@ POST 方法通常用来向服务器发送表单数据。
 客户端发起一个请求时，这个请求可能要穿过路由器、防火墙、代理、网关等。每个中间节点都可能会修改原始的 HTTP 请求，TRACE 方法允许客户端在最终发起请求时，看看它变成了什么样子。
 TRACE 请求会在目的服务器端发起一个“环回”诊断。行程最后一站的服务器会弹回一条 TRACE 响应，并在响应主体中携带它收到的原始请求报文。 这样客户端就可以查看在所有中间 HTTP 应用程序组成的请求/响应链上，原始报文是否被毁坏或修改过。
 
-![image.png](https://cdn.nlark.com/yuque/0/2021/png/333805/1637153652626-60f4ff1e-2449-4879-9e0f-c415912374e6.png#averageHue=%23e9e9e9&clientId=u00937084-8775-4&from=paste&id=kkUOg&originHeight=370&originWidth=720&originalType=url&ratio=1&rotation=0&showTitle=false&size=184006&status=done&style=none&taskId=u7d0b2f5e-1a0c-42e1-a033-500c0e1d00a&title=)
+![image.png](./1716346958202-5.png)
 TRACE 方法主要用于诊断，用于验证请求是否如愿穿过了请求/响应链。它也是一种工具，用来查看代理和其他应用程序对用户请求所产生的效果。 TRACE 请求中不能带有实体的主体部分。TRACE 响应的实体主体部分包含了响应服务器收到的请求的精确副本。
 
 ##### 1.1.8.5、OPTIONS
@@ -194,7 +194,7 @@ DELETE 方法就是让服务器删除请求 URL 所指定的资源。
 
 #### 1.1.9、状态码
 
-![image.png](https://cdn.nlark.com/yuque/0/2021/png/333805/1637153652500-5c0e1143-9925-4506-8771-84246663bc19.png#averageHue=%23e5c086&clientId=u00937084-8775-4&from=paste&id=sx4jl&originHeight=243&originWidth=342&originalType=url&ratio=1&rotation=0&showTitle=false&size=11892&status=done&style=none&taskId=u07470d90-2b19-45d4-bf2a-d72b4d7eaa7&title=)
+![image.png](./1716346958202-6.png)
 
 ##### 1.1.9.1、300~399 重定向状态码
 
@@ -224,13 +224,13 @@ DELETE 方法就是让服务器删除请求 URL 所指定的资源。
 
 有些首部提供了与报文相关的最基本信息，它们被称为通用首部。以下是一些常见的通用首部：
 
-![image.png](https://cdn.nlark.com/yuque/0/2021/png/333805/1637153653099-2c9e198e-b479-4373-bba0-923bdd4b971c.png#averageHue=%23e7e7e7&clientId=u00937084-8775-4&from=paste&id=BTA4Y&originHeight=296&originWidth=720&originalType=url&ratio=1&rotation=0&showTitle=false&size=135810&status=done&style=none&taskId=ueb3956f0-e020-4bd8-9132-7810c6a3b12&title=)
+![image.png](./1716346958202-7.png)
 
 ##### 1.1.10.3、请求首部
 
 请求首部是只在请求报文中有意义的首部，用于说明请求的详情。以下是一些常见的请求首部：
 
-![image.png](https://cdn.nlark.com/yuque/0/2021/png/333805/1637153653396-e7b3f5f8-84a5-4c30-908e-909103ab0e09.png#averageHue=%23e6e6e6&clientId=u00937084-8775-4&from=paste&id=OeSZh&originHeight=311&originWidth=720&originalType=url&ratio=1&rotation=0&showTitle=false&size=132311&status=done&style=none&taskId=u8e1705ec-07c3-4b98-a56a-def044b4394&title=)
+![image.png](./1716346958202-8.png)
 
 ##### 1.1.10.4、响应首部
 
@@ -240,7 +240,7 @@ DELETE 方法就是让服务器删除请求 URL 所指定的资源。
 
 实体首部提供了有关实体及其内容的大量信息，从有关对象类型的信息，到能够对资源使用的各种有效的请求方法。
 例如**内容首部**，提供了与实体内容有关的特定信息，说明了其类型、尺寸以及处理它所需的其他有用信息。 另外，通用的缓存首部说明了如何或什么时候进行缓存。**实体的缓存首部**提供了与被缓存实体有关的信息。
-![image.png](https://cdn.nlark.com/yuque/0/2021/png/333805/1637153653191-ee305be7-fc24-49c9-91f3-91f73cfb87d8.png#averageHue=%23e1e1e1&clientId=u00937084-8775-4&from=paste&id=wdxT3&originHeight=118&originWidth=720&originalType=url&ratio=1&rotation=0&showTitle=false&size=50898&status=done&style=none&taskId=u82d67db2-896f-434f-a61a-53dee8e1810&title=)
+![image.png](./1716346958202-9.png)
 
 ### 1.2、`HTTP1.0`和 `HTTP1.1`的一些区别
 
@@ -329,7 +329,7 @@ HTTP/1.1 无法为重要的资源指定优先级，每个 HTTP 请求都是一�
 
 HTTPS 是最流行的 HTTP 安全形式，由网景公司首创，所有主要的浏览器和服务器都支持此协议。 使用 HTTPS 时，所有的 HTTP 请求和响应数据在发送之前，都要进行加密。加密可以使用 SSL 或 TLS。
 
-![image.png](https://cdn.nlark.com/yuque/0/2021/png/333805/1637153653440-4c872631-c4ff-4456-91e9-4bb2108bf618.png#averageHue=%23ededed&clientId=u00937084-8775-4&from=paste&id=Y6gZ3&originHeight=304&originWidth=720&originalType=url&ratio=1&rotation=0&showTitle=false&size=128591&status=done&style=none&taskId=u7ac7bb82-6133-4001-8a55-ec3ea9600a7&title=)
+![image.png](./1716346958202-10.png)
 
 SSL/TLS 协议作用在 HTTP 协议之下，对于上层应用来说，原来的发送/接收数据流程不变，这就很好地兼容了老的 HTTP 协议。由于 SSL/TLS 差别不大，下面统一使用 SSL。
 要想了解 HTTPS 为何安全，还得继续了解一下这些概念：**加密算法**、**摘要算法**、**数字签名**和**数字证书**。
@@ -351,7 +351,7 @@ SSL/TLS 协议作用在 HTTP 协议之下，对于上层应用来说，原来的
 1. **密钥对产生器**产生出接收者 B 的一对密钥，即加密密钥 PK 和解密密钥 SK。
 2. 发送者 A 用 B 的公钥 PK 作为加密密钥来加密信息，B 接收后用解密密钥 SK 解密。
 
-![image.png](https://cdn.nlark.com/yuque/0/2021/png/333805/1637153653860-b14826ac-80bf-466d-89d1-3f2a1e0bbe54.png#averageHue=%23f0f0f0&clientId=u00937084-8775-4&from=paste&id=FKc0c&originHeight=245&originWidth=671&originalType=url&ratio=1&rotation=0&showTitle=false&size=50590&status=done&style=none&taskId=ub4911a72-f835-4cb8-a6c3-050bd311aa1&title=)
+![image.png](./1716346958202-11.png)
 使用对称密钥时，由于双方使用同样的密钥，因此在通信信道上可以进行一对一的双向保密通信，双方都可以用同一个密钥加密解密。
 使用公开密钥时，在通信信道上可以是多对一的单向保密信道。即可以有多人持有 B 的公钥，但只有 B 才能解密。
 
@@ -369,11 +369,11 @@ SSL/TLS 协议作用在 HTTP 协议之下，对于上层应用来说，原来的
 
 数字签名通常是用非对称公开密钥技术产生的。
 
-![image.png](https://cdn.nlark.com/yuque/0/2021/png/333805/1637153654427-ff875ee0-6e44-40d4-8f0e-5b412c5fe09e.png#averageHue=%23efefef&clientId=u00937084-8775-4&from=paste&id=v3Cum&originHeight=225&originWidth=665&originalType=url&ratio=1&rotation=0&showTitle=false&size=60971&status=done&style=none&taskId=u45a5de3a-61cf-4518-8c15-28948406458&title=)
+![image.png](./1716346958202-12.png)
 
 看上图，任何人都能用 A 的公钥 PK 对密文进行 E 运算后得到 A 发送的明文。可见这种通信并非为了保密，而是为了进行签名和核实签名，即确认此信息是 A 发送的（使用 A 的密钥进行加密的报文，只有使用 A 的公钥才能正确解密）。 但上述过程仅对报文进行了签名，对报文 X 本身却未保密，所以要采用下图的方法，同时实现秘密通信和数字签名。
 
-![image.png](https://cdn.nlark.com/yuque/0/2021/png/333805/1637153654548-c2a79682-167b-47fe-8940-f49b6a7e4fda.png#averageHue=%23ececec&clientId=u00937084-8775-4&from=paste&id=E9EHm&originHeight=294&originWidth=712&originalType=url&ratio=1&rotation=0&showTitle=false&size=102643&status=done&style=none&taskId=ucce86fcd-1dea-466a-aaa0-d6c0dfadab5&title=)
+![image.png](./1716346958202-13.png)
 
 #### 数字证书
 
@@ -394,20 +394,20 @@ SSL/TLS 协议作用在 HTTP 协议之下，对于上层应用来说，原来的
 1. 用摘要算法对数字证书的内容计算出摘要；
 2. 用数字证书的私钥对摘要进行加密得到数字签名。
 
-![image.png](https://cdn.nlark.com/yuque/0/2021/png/333805/1637153655097-cddd7482-3c9c-4705-8334-b1e37e15b7a0.png#averageHue=%23f5f5f5&clientId=u00937084-8775-4&from=paste&id=NySJJ&originHeight=349&originWidth=720&originalType=url&ratio=1&rotation=0&showTitle=false&size=99831&status=done&style=none&taskId=u67e431d9-3ac8-4c2e-adb4-67870062a2d&title=)
+![image.png](./1716346958202-14.png)
 当浏览器收到证书时，会对签名颁发机构进行验证，如果颁发机构是个很有权威的公共签名机构，浏览器可能就知道其公开密钥了（浏览器会预装很多签名颁发机构的证书）。如果对签名颁发机构一无所知，浏览器通常会向用户显示一个对话框，看看他是否相信这个签名发布者。
 因为数字证书的公钥是公开的，任何人都可以用公钥解密出数字证书的数字签名的摘要，然后再用同样的摘要算法对证书内容进行摘要计算，将得出的摘要和解密后的摘要作对比，如果内容一致则说明这个证书没有被篡改过，可以信任。
 这个过程是建立在被大家所认可的证书机构之上得到的公钥，所以这是一种安全的方式。
 
-![image.png](https://cdn.nlark.com/yuque/0/2021/png/333805/1637153655122-5cd5ceb1-cca9-4cad-bf43-26465a162922.png#averageHue=%23f5f5f5&clientId=u00937084-8775-4&from=paste&id=AWTQ6&originHeight=428&originWidth=720&originalType=url&ratio=1&rotation=0&showTitle=false&size=123836&status=done&style=none&taskId=u6d940eda-e0de-4efd-88f1-b2f5a266d1d&title=)
+![image.png](./1716346958202-15.png)
 
 #### HTTPS 连接建立过程
 
 HTTPS 连接建立过程和 HTTP 差不多，区别在于 HTTP（默认端口 80） 请求只要在 TCP 连接建立后就可以发起，而 HTTPS（默认端口 443） 在 TCP 连接建立后，还需要经历 SSL 协议握手，成功后才能发起请求。
 
-![image.png](https://cdn.nlark.com/yuque/0/2021/png/333805/1637153655562-ef0fd0fc-620d-4f0f-8722-d693418638cd.png#averageHue=%23f0f0f0&clientId=u00937084-8775-4&from=paste&id=k5YV4&originHeight=892&originWidth=720&originalType=url&ratio=1&rotation=0&showTitle=false&size=336699&status=done&style=none&taskId=u3de84d92-2892-48c1-9d95-507e911c0f4&title=)
+![image.png](./1716346958202-16.png)
 
-![image.png](https://cdn.nlark.com/yuque/0/2021/png/333805/1637153655660-0e9d90bb-63ec-41b5-8caf-cf421e515f21.png#averageHue=%23f0f0f0&clientId=u00937084-8775-4&from=paste&id=WfVfU&originHeight=556&originWidth=720&originalType=url&ratio=1&rotation=0&showTitle=false&size=198905&status=done&style=none&taskId=uec0b86d1-b10a-4747-86f0-e59c1c86525&title=)
+![image.png](./1716346958202-17.png)
 我知道肯定会有人不满足于简化版的 SSL 握手过程，所以我找了一篇文章[SSL/TLS 握手过程详解](https://link.zhihu.com/?target=https%3A//www.jianshu.com/p/7158568e4867)，这篇文章非常详细的讲解了 SSL 握手的每一步骤。建议有兴趣的同学看一看。
 
 ### 2.2、`HTTPS`与 `HTTP`的一些区别
@@ -492,7 +492,7 @@ HTTP/2 是基于帧的协议。采用分帧是为了将重要信息封装起来�
 
 HTTP/2 有了帧，处理协议的程序就能预先知道会收到什么，并且 HTTP/2 有表示帧长度的字段。
 
-![image.png](https://cdn.nlark.com/yuque/0/2021/png/333805/1637153655686-438e3730-6b28-491e-ad27-63c4bbf36f46.png#averageHue=%23e3c8ac&clientId=u00937084-8775-4&from=paste&id=gneRY&originHeight=392&originWidth=720&originalType=url&ratio=1&rotation=0&showTitle=false&size=129068&status=done&style=none&taskId=u0bf03e45-2275-4737-b3fe-2c44a368174&title=)
+![image.png](./1716346958202-18.png)
 
 #### 3.6.3、帧结构
 
@@ -508,12 +508,12 @@ HTTP/2 有了帧，处理协议的程序就能预先知道会收到什么，并�
  +---------------------------------------------------------------+
 ```
 
-![image.png](https://cdn.nlark.com/yuque/0/2021/png/333805/1637153656123-8e53fc9b-7277-47b2-af84-4986ea2e3799.png#averageHue=%23f7f5d0&clientId=u00937084-8775-4&from=paste&id=QpZ9r&originHeight=400&originWidth=1031&originalType=url&ratio=1&rotation=0&showTitle=false&size=35581&status=done&style=none&taskId=u4b7146c7-63d2-40e5-a06b-92b1f70d917&title=)
+![image.png](./1716346958202-19.png)
 由于 HTTP/2 是分帧的，请求和响应都可以多路复用，有助于解决类似类似队头阻塞的问题。
 
 #### 3.6.4、帧类型
 
-![image.png](https://cdn.nlark.com/yuque/0/2021/png/333805/1637153656268-bff64a89-5f57-4e90-afe6-7a06ff873a4f.png#averageHue=%23f5f8d4&clientId=u00937084-8775-4&from=paste&id=cGqvz&originHeight=422&originWidth=582&originalType=url&ratio=1&rotation=0&showTitle=false&size=35629&status=done&style=none&taskId=u4a86d95a-f6f0-4b4f-a7be-217a336ff0f&title=)
+![image.png](./1716346958202-20.png)
 
 #### 3.6.5、HTTP2的多路复用
 
@@ -531,7 +531,7 @@ HTTP/2对同一域名下所有请求都是基于流，所有的请求和响应�
 - 消除不必要的延迟，从而减少页面加载的时间；
 - 不必再为绕过 HTTP 1.x 限制而多做很多工作；
 
-![image.png](https://cdn.nlark.com/yuque/0/2021/png/333805/1637153656768-f9c47569-8b7a-4cf0-89ac-b3de5338e4c4.png#averageHue=%23f0eeed&clientId=u00937084-8775-4&from=paste&id=p7Yl3&originHeight=246&originWidth=720&originalType=url&ratio=1&rotation=0&showTitle=false&size=104658&status=done&style=none&taskId=ufd3c7a14-83e0-4a97-84a5-5e3c4a414a2&title=)
+![image.png](./1716346958202-21.png)
 
 #### 3.6.6、流
 
@@ -544,7 +544,7 @@ HTTP/2 规范对流的定义是：HTTP/2 连接上独立的、双向的帧序列
 HTTP 消息泛指 HTTP 请求或响应，消息由一或多个帧组成，这些帧可以乱序发送，然后再根据每个帧首部的流 ID 重新组装。
 一个消息至少由 HEADERS 帧（它初始化流）组成，并且可以另外包含 CONTINUATION 和 DATA 帧，以及其他的 HEADERS 帧。
 
-![image.png](https://cdn.nlark.com/yuque/0/2021/png/333805/1637153656913-850e0b15-c38b-4bd4-bfce-971deae4464d.png#averageHue=%23e5d4c1&clientId=u00937084-8775-4&from=paste&id=LNm7m&originHeight=511&originWidth=720&originalType=url&ratio=1&rotation=0&showTitle=false&size=174141&status=done&style=none&taskId=uc5c2d8ab-1fb3-4d28-bded-59649409dcf&title=)
+![image.png](./1716346958202-22.png)
 HTTP/1.1 的请求和响应部分都分成消息首部和消息体两部分；HTTP/2 的请求和响应分成 HEADERS 帧和 DATA 帧。
 
 #### 3.6.8、优先级
@@ -569,7 +569,7 @@ HTTP/2 连接建立之后，客户端与服务器交换 SETTINGS 帧，目的是
 
 HTTP/2 新增的一个强大的新功能，就是服务器可以对一个客户端请求发送多个响应。换句话说，除了对最初请求的响应外，服务器还可以额外向客户端推送资源，而无需客户端明确地请求。
 
-![image.png](https://cdn.nlark.com/yuque/0/2021/png/333805/1637153657018-e16e0798-13b0-4df0-a2c1-8b5679f76e8c.png#averageHue=%23f3f2f2&clientId=u00937084-8775-4&from=paste&id=zB5Y9&originHeight=311&originWidth=720&originalType=url&ratio=1&rotation=0&showTitle=false&size=124646&status=done&style=none&taskId=u7b546736-c603-493f-9e93-568f27346e6&title=)
+![image.png](./1716346958202-23.png)
 为什么需要这样一个机制呢？通常的 Web 应用都由几十个资源组成，客户端需要分析服务器提供的文档才能逐个找到它们。那为什么不让服务器提前就把这些资源推送给客户端，从而减少额外的时间延迟呢？服务器已经知道客户端下一步要请求什么资源了，这时候服务器推送即可派上用场。
 另外，客户端也可以拒绝服务器的推送。
 
@@ -583,29 +583,29 @@ HTTP/2 新增的一个强大的新功能，就是服务器可以对一个客户�
 在 HTTP/1 中，HTTP 请求和响应都是由「状态行、请求 / 响应头部、消息主体」三部分组成。一般而言，消息主体都会经过 gzip 压缩，或者本身传输的就是压缩过后的二进制文件（例如图片、音频），但状态行和头部却没有经过任何压缩，直接以纯文本传输。
 随着 Web 功能越来越复杂，每个页面产生的请求数也越来越多，根据 [HTTP Archive](http://httparchive.org/trends.php) 的统计，当前平均每个页面都会产生上百个请求。越来越多的请求导致消耗在头部的流量越来越多，尤其是每次都要传输 UserAgent、Cookie 这类不会频繁变动的内容，完全是一种浪费。
 以下是我随手打开的一个页面的抓包结果。可以看到，传输头部的网络开销超过 100kb，比 HTML 还多：
-![image.png](https://cdn.nlark.com/yuque/0/2021/png/333805/1637158483672-9466aca9-2e13-49e9-ad59-43bf1bbeb8fa.png#averageHue=%23d8e5e9&clientId=u62627cad-305c-4&from=paste&height=570&id=GLR9n&originHeight=1139&originWidth=1600&originalType=binary&ratio=1&rotation=0&showTitle=false&size=1756268&status=done&style=none&taskId=u2008615e-65ce-4156-be34-c7a1fcecaa5&title=&width=800)
+![image.png](./1716346958202-24.png)
 下面是其中一个请求的明细。可以看到，为了获得 58 字节的数据，在头部传输上花费了好几倍的流量：
-![image.png](https://cdn.nlark.com/yuque/0/2021/png/333805/1637158498232-6050de54-e62f-49b3-943b-6e933e83eda4.png#averageHue=%23d8e9ef&clientId=u62627cad-305c-4&from=paste&height=569&id=fSL2p&originHeight=1137&originWidth=1600&originalType=binary&ratio=1&rotation=0&showTitle=false&size=1911367&status=done&style=none&taskId=u70eeaadb-f5c9-46f3-be78-f90aa59763e&title=&width=800)
+![image.png](./1716346958202-25.png)
 HTTP/1 时代，为了减少头部消耗的流量，有很多优化方案可以尝试，例如合并请求、启用 Cookie-Free 域名等等，但是这些方案或多或少会引入一些新的问题，这里不展开讨论。
 
 ##### 3.6.11.2、压缩后的效果
 
 接下来我将使用访问本博客的抓包记录来说明 HTTP/2 头部压缩带来的变化。如何使用 Wireshark 对 HTTPS 网站进行抓包并解密，请看我的[这篇文章](https://imququ.com/post/http2-traffic-in-wireshark.html)。
 首先直接上图。下图选中的 Stream 是首次访问本站，浏览器发出的请求头：
-![image.png](https://cdn.nlark.com/yuque/0/2021/png/333805/1637158508836-f796c056-2fb5-4de9-8b90-d9cbb0881f1b.png#averageHue=%23b1b9bc&clientId=u62627cad-305c-4&from=paste&height=566&id=M1774&originHeight=1132&originWidth=1600&originalType=binary&ratio=1&rotation=0&showTitle=false&size=1705256&status=done&style=none&taskId=u7a8c1da1-fd9f-4e0d-bc2c-27408031136&title=&width=800)
+![image.png](./1716346958202-26.png)
 从图片中可以看到这个 HEADERS 流的长度是 206 个字节，而解码后的头部长度有 451 个字节。由此可见，压缩后的头部大小减少了一半多。
 然而这就是全部吗？再上一张图。下图选中的 Stream 是点击本站链接后，浏览器发出的请求头：
-![image.png](https://cdn.nlark.com/yuque/0/2021/png/333805/1637158523343-bd6e21f2-9cfc-4d27-af1c-96259c9ec1bf.png#averageHue=%23b2b8bd&clientId=u62627cad-305c-4&from=paste&height=566&id=VidGf&originHeight=1132&originWidth=1600&originalType=binary&ratio=1&rotation=0&showTitle=false&size=1222553&status=done&style=none&taskId=u223b93d1-3097-45e7-9093-1f30f2f75be&title=&width=800)
+![image.png](./1716346958202-27.png)
 可以看到这一次，HEADERS 流的长度只有 49 个字节，但是解码后的头部长度却有 470 个字节。这一次，压缩后的头部大小几乎只有原始大小的 1/10。
 为什么前后两次差距这么大呢？我们把两次的头部信息展开，查看同一个字段两次传输所占用的字节数：
-![image.png](https://cdn.nlark.com/yuque/0/2021/png/333805/1637158535339-7ca064dd-3f9f-4f54-86e1-48a87c87738f.png#averageHue=%23b9c1c3&clientId=u62627cad-305c-4&from=paste&height=566&id=X2b5s&originHeight=1132&originWidth=1600&originalType=binary&ratio=1&rotation=0&showTitle=false&size=1544385&status=done&style=none&taskId=u4a36e6e2-eadd-4cf6-8b83-0feceff55fb&title=&width=800)
-![image.png](https://cdn.nlark.com/yuque/0/2021/png/333805/1637158542197-199d32d1-1f3f-4d18-9c84-c6668be7d471.png#averageHue=%23c0c5c9&clientId=u62627cad-305c-4&from=paste&height=566&id=AznIk&originHeight=1132&originWidth=1600&originalType=binary&ratio=1&rotation=0&showTitle=false&size=972661&status=done&style=none&taskId=uded5caf2-588c-4c88-b515-08959bc3987&title=&width=800)
+![image.png](./1716346958202-28.png)
+![image.png](./1716346958202-29.png)
 对比后可以发现，第二次的请求头部之所以非常小，是因为大部分键值对只占用了一个字节。尤其是 UserAgent、Cookie 这样的头部，首次请求中需要占用很多字节，后续请求中都只需要一个字节。
 
 ##### 3.6.11.3、技术原理
 
 下面这张截图，取自 Google 的性能专家 Ilya Grigorik 在 Velocity 2015 • SC 会议中分享的「[HTTP/2 is here, let&#39;s optimize!](http://velocityconf.com/devops-web-performance-2015/public/schedule/detail/42385)」，非常直观地描述了 HTTP/2 中头部压缩的原理：
-![image.png](https://cdn.nlark.com/yuque/0/2021/png/333805/1637158554533-089d7f18-4232-4467-a883-c36a61e90610.png#averageHue=%236da88e&clientId=u62627cad-305c-4&from=paste&height=475&id=Shjoh&originHeight=949&originWidth=1600&originalType=binary&ratio=1&rotation=0&showTitle=false&size=492590&status=done&style=none&taskId=u732048db-a0d3-43d6-aee9-902aa665927&title=&width=800)
+![image.png](./1716346958202-30.png)
 我再用通俗的语言解释下，头部压缩需要在支持 HTTP/2 的浏览器和服务端之间：
 
 - 维护一份相同的静态字典（Static Table），包含常见的头部名称，以及特别常见的头部名称与值的组合；
@@ -613,7 +613,7 @@ HTTP/1 时代，为了减少头部消耗的流量，有很多优化方案可以�
 - 支持基于静态哈夫曼码表的哈夫曼编码（Huffman Coding）；
 
 静态字典的作用有两个：1）对于完全匹配的头部键值对，例如 :method: GET，可以直接使用一个字符表示；2）对于头部名称可以匹配的键值对，例如 cookie: xxxxxxx，可以将名称使用一个字符表示。HTTP/2 中的静态字典如下（以下只截取了部分，完整表格在[这里](https://httpwg.github.io/specs/rfc7541.html#static.table.definition)）：
-![image.png](https://cdn.nlark.com/yuque/0/2021/png/333805/1637158577686-7be3db53-353f-4f1d-a5f0-53acdf7ff3e8.png#averageHue=%23fafafa&clientId=u62627cad-305c-4&from=paste&height=590&id=nN1jr&originHeight=1180&originWidth=866&originalType=binary&ratio=1&rotation=0&showTitle=false&size=67515&status=done&style=none&taskId=u97fc695f-8f86-4234-a3d0-5f2d2228b48&title=&width=433)
+![image.png](./1716346958202-31.png)
 同时，浏览器可以告知服务端，将 cookie: xxxxxxx 添加到动态字典中，这样后续整个键值对就可以使用一个字符表示了。类似的，服务端也可以更新对方的动态字典。需要注意的是，动态字典上下文有关，需要为每个 HTTP/2 连接维护不同的字典。
 使用字典可以极大地提升压缩效果，其中静态字典在首次请求中就可以使用。对于静态、动态字典中不存在的内容，还可以使用哈夫曼编码来减小体积。HTTP/2 使用了一份静态哈夫曼码表（[详见](https://httpwg.github.io/specs/rfc7541.html#huffman.code)），也需要内置在客户端和服务端之中。
 这里顺便说一下，HTTP/1 的状态行信息（Method、Path、Status 等），在 HTTP/2 中被拆成键值对放入头部（冒号开头的那些），同样可以享受到字典和哈夫曼压缩。另外，HTTP/2 中所有头部名称必须小写。
@@ -631,7 +631,7 @@ HTTP/1 时代，为了减少头部消耗的流量，有很多优化方案可以�
 ```
 
 这是最简单的情况，使用一个字节就可以表示这个头部了，最左一位固定为 1，之后七位存放键值对在静态或动态字典中的索引。例如下图中，头部索引值为 2（0000010），在静态字典中查询可得 :method: GET。
-![image.png](https://cdn.nlark.com/yuque/0/2021/png/333805/1637158629600-9c3cdb53-9b05-4861-8221-05f04d723329.png#averageHue=%23dfe4e2&clientId=u62627cad-305c-4&from=paste&height=423&id=pTw0b&originHeight=846&originWidth=1300&originalType=binary&ratio=1&rotation=0&showTitle=false&size=1523165&status=done&style=none&taskId=u428df1f8-d2d1-472e-87f7-f4afc80708d&title=&width=650)
+![image.png](./1716346958202-32.png)
 **2）头部名称在字典中，更新动态字典**
 
 ```
@@ -646,7 +646,7 @@ HTTP/1 时代，为了减少头部消耗的流量，有很多优化方案可以�
 ```
 
 对于这种情况，首先需要使用一个字节表示头部名称：左两位固定为 01，之后六位存放头部名称在静态或动态字典中的索引。接下来的一个字节第一位 H 表示头部值是否使用了哈夫曼编码，剩余七位表示头部值的长度 L，后续 L 个字节就是头部值的具体内容了。例如下图中索引值为 32（100000），在静态字典中查询可得 cookie；头部值使用了哈夫曼编码（1），长度是 28（0011100）；接下来的 28 个字节是 cookie 的值，将其进行哈夫曼解码就能得到具体内容。
-![image.png](https://cdn.nlark.com/yuque/0/2021/png/333805/1637158674876-09902603-04a3-4a88-9559-6e23fb6dd15d.png#averageHue=%23cad8e2&clientId=u62627cad-305c-4&from=paste&height=426&id=i4r3Y&originHeight=851&originWidth=1300&originalType=binary&ratio=1&rotation=0&showTitle=false&size=1390873&status=done&style=none&taskId=u4eaa525e-6c53-4aa1-9910-add6dd1626e&title=&width=650)
+![image.png](./1716346958202-33.png)
 **3）头部名称不在字典中，更新动态字典**
 
 ```
@@ -665,7 +665,7 @@ HTTP/1 时代，为了减少头部消耗的流量，有很多优化方案可以�
 ```
 
 这种情况与第 2 种情况类似，只是由于头部名称不在字典中，所以第一个字节固定为 01000000；接着申明名称是否使用哈夫曼编码及长度，并放上名称的具体内容；再申明值是否使用哈夫曼编码及长度，最后放上值的具体内容。例如下图中名称的长度是 5（0000101），值的长度是 6（0000110）。对其具体内容进行哈夫曼解码后，可得 pragma: no-cache。
-![image.png](https://cdn.nlark.com/yuque/0/2021/png/333805/1637158780473-6cf5f2f1-8634-45a6-a4fc-527a0c856c67.png#averageHue=%23dee5e7&clientId=u62627cad-305c-4&from=paste&height=426&id=itfVh&originHeight=852&originWidth=1300&originalType=binary&ratio=1&rotation=0&showTitle=false&size=1439763&status=done&style=none&taskId=udb892e98-122e-4fda-a3a6-db55bf9fc2d&title=&width=650)
+![image.png](./1716346958202-34.png)
 客户端或服务端看到这种格式的头部键值对，会将其添加到自己的动态字典中。后续传输这样的内容，就符合第 1 种情况了。
 **4）头部名称在字典中，不允许更新动态字典**
 
@@ -681,7 +681,7 @@ HTTP/1 时代，为了减少头部消耗的流量，有很多优化方案可以�
 ```
 
 这种情况与第 2 种情况非常类似，唯一不同之处是：第一个字节左四位固定为 0001，只剩下四位来存放索引了，如下图：
-![image.png](https://cdn.nlark.com/yuque/0/2021/png/333805/1637158830783-90a08970-32bf-4110-92f5-b7bc39bf4ac1.png#averageHue=%23cdd7dd&clientId=u62627cad-305c-4&from=paste&height=426&id=YMmQ7&originHeight=852&originWidth=1300&originalType=binary&ratio=1&rotation=0&showTitle=false&size=1408422&status=done&style=none&taskId=ucef1fa58-de27-4ea6-91ae-c8feebf2ca2&title=&width=650)
+![image.png](./1716346958202-35.png)
 这里需要介绍另外一个知识点：对整数的解码。上图中第一个字节为 00011111，并不代表头部名称的索引为 15（1111）。第一个字节去掉固定的 0001，只剩四位可用，将位数用 N 表示，它只能用来表示小于「2 ^ N - 1 = 15」的整数 I。对于 I，需要按照以下规则求值（RFC 7541 中的伪代码，[via](http://http2.github.io/http2-spec/compression.html#integer.representation)）：
 
 ```
@@ -808,7 +808,7 @@ verify return:0
 
 要求nginx的最低版本是1.10.0，openssl的最低版本是1.0.2，http/2在实现上基本上只支持https。笔者的系统是centos 7，用yum安装的nginx是1.10.2，这个版本是可以的，但是系统的openssl是1.0.1，把系统的openssl update一下，变成1.0.2，但还是不可以。发现是因为nginx在编译的时候指定的openssl是1.0.1的，所以即使升级了系统的openssl也是没有用的，如下图所示：
 
-![image.png](https://cdn.nlark.com/yuque/0/2021/png/333805/1637160314164-483a930f-45cc-4eb8-b640-6185c4383b00.png#averageHue=%233e3c3a&clientId=uc6a1b6d8-b331-4&from=paste&id=XPObi&originHeight=170&originWidth=1052&originalType=url&ratio=1&rotation=0&showTitle=false&size=36143&status=done&style=none&taskId=uceaa5ebe-7a9f-4075-ad3d-d008fef7c0d&title=)
+![image.png](./1716346958202-36.png)
 
 那怎么升级呢？[nginx官方](https://link.zhihu.com/?target=https%3A//www.nginx.com/blog/supporting-http2-google-chrome-users/)提供了两种方法，第一种是升级操作系统，第二种是从源码编译新版本的nginx，我们用第二种方法。当前nginx最新的稳定版本是1.12.1，在服务器上执行以下命令：
 
@@ -833,7 +833,7 @@ sudo yum install gperftools-devel
 ```
 
 新安装后的nginx的openssl版本就对了：
-![image.png](https://cdn.nlark.com/yuque/0/2021/png/333805/1637160399363-938be521-40fa-4d94-b843-722d7e75c9e9.png#averageHue=%233d3b3a&clientId=uc6a1b6d8-b331-4&from=paste&id=qhbs7&originHeight=172&originWidth=1142&originalType=url&ratio=1&rotation=0&showTitle=false&size=37656&status=done&style=none&taskId=uc2c6de7a-120b-44b0-a5a5-243ede0e64a&title=)
+![image.png](./1716346958202-37.png)
 然后添加nginx配置，原本https的listen为：
 
 > **listen** 443 ssl;
@@ -844,15 +844,15 @@ sudo yum install gperftools-devel
 
 然后把nginx关了再开一下（因为新安装了一个nginx，要先关一下再开），这个时候再用浏览器访问，原本的http1.1：
 
-![image.png](https://cdn.nlark.com/yuque/0/2021/png/333805/1637160448315-2feaf1e9-b427-4e34-b7aa-09c2edc7c430.png#averageHue=%23faf9f8&clientId=uc6a1b6d8-b331-4&from=paste&id=ndfnT&originHeight=184&originWidth=542&originalType=url&ratio=1&rotation=0&showTitle=false&size=24404&status=done&style=none&taskId=u9581b852-b1f2-40f5-ab82-d3c78d88695&title=)
+![image.png](./1716346958202-38.png)
 
 就会变成http2：
-![image.png](https://cdn.nlark.com/yuque/0/2021/png/333805/1637160448389-3fff9472-24b9-4723-9c7e-24f3b0231adc.png#averageHue=%23faf9f7&clientId=uc6a1b6d8-b331-4&from=paste&id=jslb2&originHeight=174&originWidth=504&originalType=url&ratio=1&rotation=0&showTitle=false&size=23933&status=done&style=none&taskId=u0bd80a9e-5f32-4532-9e7b-be53768bdea&title=)
+![image.png](./1716346958202-39.png)
 
 有个细节是HTTP/2不叫2.0，这是故意的，因为1.x容易混淆，所以2的时候就不带小版本号了，所以上面firefox的显示其实是不对的。
 整个传输模型如下图所示（图片来自[nginx](https://link.zhihu.com/?target=https%3A//www.nginx.com/blog/http2-r7/)）：
 
-![image.png](https://cdn.nlark.com/yuque/0/2021/png/333805/1637160448473-6eba1754-b601-4a5b-9cbf-eced5d38cbe0.png#averageHue=%23f8f8f8&clientId=uc6a1b6d8-b331-4&from=paste&id=VwFZ6&originHeight=300&originWidth=1024&originalType=url&ratio=1&rotation=0&showTitle=false&size=46590&status=done&style=none&taskId=u3f3ecb75-76b0-4f6a-9f31-576f51a0b6e&title=)
+![image.png](./1716346958202-40.png)
 
 nginx和客户端是HTTP/2，而nginx和业务服务还是HTTP/1.1，因为nginx的服务和业务服务通常是处于同一个内网，速度一般会很快，而nginx和客户端的连接就不太可控了，如果业务服务本身支持HTTP/2，会更好。
 
@@ -867,7 +867,7 @@ Google 在推SPDY的时候就已经意识到了这些问题，于是就另起炉
   这样的机制就会带来一些问题，假设发送端总共对同一个封包发送了两次 (初始 + 重传)，使用的都是同一个sequence number：编号N。之后发送端在拿到编号N封包的回传ACK 时，将无法判断这个带有编号N的ACK，是接收端在收到初始封包后回传的ACK。这就会加大后续的重传计算的耗时。QUIC为了避免这个问题，发送端在传送封包时，初始与重传的每一个封包都改用一个新的编号，unique packet number，每一个编号都唯一而且严格递增，这样每次在收到ACK时，就可以依据编号明确的判断这个ACK是来自初始封包或者是重传封包。
 - 实现了快速握手功能。
   不管是HTTP1.0/1.1还是 HTTPS，HTTP2.0，都使用了TCP进行传输。HTTPS和HTTP2还需要使用TLS协议来进行安全传输。这就出现了两个握手延迟，而基于UDP协议的QUIC，因为UDP 本身没有连接的概念，连接建立时只需要一次交互，半个握手的时间。区别如下图：
-  ![image.png](https://cdn.nlark.com/yuque/0/2021/png/333805/1637157059882-66030476-343d-41c2-a9d6-fe064620c144.png#averageHue=%23f8f8f8&clientId=u62627cad-305c-4&from=paste&height=433&id=ksQzL&originHeight=381&originWidth=600&originalType=binary&ratio=1&rotation=0&showTitle=false&size=95009&status=done&style=none&taskId=u24d9592a-927f-4b8b-abff-64a5d6c8c58&title=&width=682)
+  ![image.png](./1716346958202-41.png)
 - 集成了TLS加密功能。目前QUIC使用的是TLS1.3，相较于早期版本TLS1.3有更多的优点，其中最重要的一点是减少了握手所花费的RTT个数。
 - 多路复用，彻底解决TCP中队头阻塞的问题
   QUIC保留了HTTP2.0多路复用的特性，但是即使在多路复用过程中，同一个TCP连接上有多个stream，假如其中一个stream丢包，在重传前后续的stream都会受到影响，而QUIC中一个连接上的多个stream之间没有依赖。所以当发生丢包时，只会影响当前的stream，也就避免了线头阻塞问题
