@@ -389,6 +389,23 @@ export const examples: Example[] = [
         ]
       },
       {
+        name: 'Animate.css',
+        desc: 'CSS动画库',
+        icon: 'i-simple-icons-css3 dark:invert',
+        links: [
+          {
+            channel: '官网',
+            url: 'https://animate.style/',
+            icon: 'i-mdi-web',
+          },
+          {
+            channel: 'github',
+            icon: 'i-logos-github-icon dark:invert',
+            url: 'https://github.com/animate-css/animate.css'
+          }
+        ]
+      },
+      {
         name: 'vditor',
         desc: 'Markdown编辑器',
         icon: 'inject',
