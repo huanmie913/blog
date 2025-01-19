@@ -264,6 +264,23 @@ export const examples: Example[] = [
         ]
       },
       {
+        name: 'bestblogs',
+        icon: 'inject',
+        desc: '精选中文科技文章的阅读平台',
+        links: [
+          {
+            channel: '官网',
+            url: 'https://bestblogs.dev/',
+            icon: 'i-mdi-web',
+          },
+          {
+            channel: 'github',
+            icon: 'i-logos-github-icon dark:invert',
+            url: 'https://github.com/ginobefun/bestblogs'
+            }
+        ]
+      },
+      {
         name: '动手实战人工智能',
         icon: 'i-streamline-emojis-robot-face-2 dark:invert',
         desc: '通过实例介绍一些 AI 算法(中文)',
@@ -670,6 +687,30 @@ export const examples: Example[] = [
             url: 'https://marketplace.visualstudio.com/items?itemName=hediet.vscode-drawio',
             icon: 'i-devicon-vscode dark:invert',
           }
+        ]
+      },
+      {
+        name: 'D2',
+        desc: '语义化的流程图',
+        icon: 'inject',
+        logo: 'd2_graphic.svg',
+        links:[
+          {
+            channel: '官网',
+            url: 'https://d2lang.com/',
+            icon: 'i-mdi-web',
+          },
+          {
+            channel: 'github',
+            url: 'https://github.com/terrastruct/d2',
+            icon: 'i-logos-github-icon dark:invert',
+          },
+          {
+            channel: '练习',
+            url: 'https://play.d2lang.com/',
+            icon: 'i-mdi-light-play dark:invert',
+          }
+
         ]
       },
       {
