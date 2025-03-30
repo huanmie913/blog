@@ -14,6 +14,12 @@ categories:
 
 一个开源的网页绘图编辑器![](./1697956101213-0.png)
 
+#### [Drawnix](https://github.com/plait-board/drawnix)
+
+开源的在线白板工具，集成了思维导图、流程图、画笔。[Demo](https://drawnix.com/)
+
+![1743347302883](image/index/1743347302883.png)
+
 #### [**LocalSend**](https://localsend.org/)
 
 一款开源的跨平台文件传送软件，不需要互联网连接，依靠共享 Wifi 分享文件**![](./1697956101213-1.png)

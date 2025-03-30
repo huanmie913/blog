@@ -764,6 +764,17 @@ export const examples: Example[] = [
             url: 'https://paper.z2h.cn/'
           },
         ]
+      },
+      {
+        name: 'BeddyStories',
+        desc: '全球精选儿童睡前故事',
+        icon: 'i-streamline-emojis:crescent-moon',
+        links: [
+          {
+            channel: '官网',
+            url: 'https://www.beddystories.com/',
+          }
+        ]
       }
     ]
   },
