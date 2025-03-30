@@ -43,6 +43,7 @@ export const nav: DefaultTheme.NavItem[] = [
     items: [
       { text: '自我提升', link: '/books/self-improvement/time-poor/index.md' },
       { text: '健康', link: '/books/brain-gym/index.md' },
+      { text: '管理', link: '/books/management/liurun-responsibility/index.md' },
     ]
   },
   { 
@@ -208,6 +209,12 @@ export const sidebar: DefaultTheme.Sidebar = {
       text: '健康',
       items: [
         { text: '大脑健身房', link: '/books/brain-gym/index.md' },
+      ]
+    },
+    {
+      text: '管理',
+      items: [
+        { text: '扛不住责任成为不了真的负责人', link: '/books/management/liurun-responsibility/index.md' },
       ]
     },
   ]
